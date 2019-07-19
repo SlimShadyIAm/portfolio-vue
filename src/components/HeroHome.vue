@@ -1,5 +1,5 @@
 <template>
-    <section class="hero is-dark is-bold is-fullheight" v-on:>
+    <section class="hero home-hero is-fullheight" v-on:>
         <!-- Hero head: will stick at the top -->
         <div class="hero-head">
             <Header />
@@ -47,15 +47,45 @@ export default {
   src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
 }
 
+.home-hero {
+     animation: bg-colorfade 30s infinite;
+    -moz-animation: bg-colorfade 30s infinite;
+    -webkit-animation: bg-colorfade 30s infinite;
+}
+
+@keyframes bg-colorfade {
+    0% {
+        background-color: #7d68dd
+    }
+
+    13.3% {
+        background-color: #68a2dd
+    }
+
+    33.3% {
+        background-color: #6ce292
+    }
+
+    68% {
+        background-color: #6ce292
+    }
+
+    83.3% {
+        background-color: #68a2dd
+    }
+
+    100% {
+        background-color: #7d68dd
+    }
+}
+
+
 .intro-outer {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     width: 100%;
-    animation: bg-colorfade 30s infinite;
-    -moz-animation: bg-colorfade 30s infinite;
-    -webkit-animation: bg-colorfade 30s infinite;
 }
 .intro-inner {
     display: flex;
@@ -83,6 +113,7 @@ p.intro-text {
     background-repeat: no-repeat;
     background-position: center bottom;
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent !important;
     display: inline-block;
 }
