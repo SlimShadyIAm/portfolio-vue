@@ -42,6 +42,10 @@
   font-family: 'San Francisco'
 }
 
+.navbar-brand .navbar-item:hover {
+    background-color: rgba(0, 0, 0, 0.089) !important;
+}
+
 span.x {
   margin-left: 5px;
   color: red;
