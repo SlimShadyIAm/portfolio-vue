@@ -13,7 +13,7 @@
                     </div>
                     <div class="intro-inner-right">
                         <p class="intro-text">
-                            AAMIR<br>FAROOQ
+                            <span class="mask">AAMIR<br>FAROOQ</span>
                         </p>
                         <p class="intro-text-small">Designer. Developer. Visionary.</p>
                     </div>
@@ -38,8 +38,15 @@ export default {
 @font-face {
   font-family: "San Francisco";
   font-weight: 700;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-black-webfont.woff");
+}
+
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
   src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
 }
+
 .intro-outer {
     display: flex;
     align-items: center;
@@ -64,16 +71,34 @@ export default {
 p.intro-text {
     color: #fff;
     font-size: 48px;
+    font-weight: 700;
     font-family: 'San Francisco';
     text-align: right;
     margin: 0;
+}
+
+.mask {
+    background-image: url('../assets/gradient.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    -webkit-background-clip: text;
+    color: transparent !important;
+    display: inline-block;
 }
 
 p.intro-text-small {
     color: #fff;
     font-size: 24px;
     margin: 0;
+    font-weight: 400;
     font-family: 'San Francisco';
+    text-align: right;
+}
+
+.profile-pic {
+    width: 200px;
+    border-radius: 50%;
 }
 
 </style>
