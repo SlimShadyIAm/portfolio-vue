@@ -1,5 +1,16 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <HeroIntro title="About me" subtitle="Learn a little about who I am" />
   </div>
 </template>
+
+<script>
+import HeroIntro from '@/components/HeroIntro';
+
+export default {
+  name: 'about',
+  components: {
+    HeroIntro
+  }
+}
+</script>

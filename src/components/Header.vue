@@ -16,6 +16,9 @@
             <router-link class="navbar-item" to="/" active-class="is-active">
               Home
             </router-link>
+            <router-link class="navbar-item" to="/about" active-class="is-active">
+              About
+            </router-link>
           </div>
         </div>
       </div>
