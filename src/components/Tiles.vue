@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div v-for="attribute in attributes" :key="attribute.name">
-            <h2 class="title is-3">
+            <h2 v-if="attribute.name" class="title is-3">
                 {{ attribute.name }}
             </h2>
             <div class="columns is-multiline is-full-mobile">
@@ -25,7 +25,7 @@ export default {
         return {
             attributes: [
                 {
-                    "name": "About Me",
+                    "name": "",
                     "items": [
                         {
                             "id": uuid.v4(),
