@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import bulma from 'bulma';
+import 'bulma';
 
 import Header from './components/Header'
 
