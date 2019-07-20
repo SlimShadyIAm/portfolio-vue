@@ -5,13 +5,13 @@
           <router-link class="navbar-item" to="/">
             <span :class="{'has-text-white': $route.name == 'home'}">FAROOQ .</span> <span class="x">X</span><span class="y">Y</span><span class="z">Z</span>
           </router-link>
-          <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+          <span class="navbar-burger burger" @click="toggleNav" :class="{'is-active': navOpen}" data-target="navbarMenuHeroA">
             <span></span>
             <span></span>
             <span></span>
           </span>
         </div>
-        <div id="navbarMenuHeroA" class="navbar-menu">
+        <div id="navbarMenuHeroA" class="navbar-menu" :class="{'is-active': navOpen}">
           <div class="navbar-end">
             <router-link class="navbar-item" to="/" exact-active-class="is-active">
               Home
@@ -24,6 +24,23 @@
       </div>
     </nav>
 </template>
+
+<script>
+export default {
+  'name': 'header',
+  data() {
+    return {
+      navOpen: false
+    }
+  },
+  methods: {
+    toggleNav: function() {
+      this.navOpen = !this.navOpen;
+    }
+  }
+}
+</script>
+
 
 <style scoped>
 @font-face {
