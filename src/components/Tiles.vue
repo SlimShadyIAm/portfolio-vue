@@ -1,83 +1,107 @@
 <template>
     <div class="container">
-        <br>
-        <div class="columns" v-for="i in rowCount" :key="i">
-            <div class="column is-vcentered is-full-mobile" v-for="attribute in itemCountInRow(i)" :key="attribute.id">
-                <div class="box">
-                    {{ attribute.content }}
-                </div>
+        <div v-for="attribute in attributes" :key="attribute.name">
+            <h2 class="title is-3">
+                {{ attribute.name }}
+            </h2>
+            <div class="columns is-multiline is-full-mobile">
+                <Tile :content="attribute.content" v-for="attribute in attribute.items" :key="attribute.id" />
             </div>
+            <hr>
         </div>
     </div>
 </template>
 
 <script>
 import uuid from 'uuid';
+import Tile from '@/components/Tile';
 
 export default {
     name: 'tiles',
+    components: {
+        Tile
+    },
     data() {
         return {
             attributes: [
                 {
-                    "id": uuid.v4(),
-                    "content": "19 years old, Pakistani born"   
+                    "name": "About Me",
+                    "items": [
+                        {
+                            "id": uuid.v4(),
+                            "content": "19 years old"
+                        },
+                        {
+                            "id": uuid.v4(),
+                            "content": "Bachelors' at University of Twente"
+                        },
+                        {
+                            "id": uuid.v4(),
+                            "content": "Pakistani born"
+                        },
+                    ]
                 },
                 {
-                    "id": uuid.v4(),
-                    "content": "Bachelors' student at the University of Twente"   
+                    "name": "Knowledge",
+                    "items": [
+                        {
+                            "id": uuid.v4(),
+                            "content": "Frontend web development"
+                        },
+                        {
+                            "id": uuid.v4(),
+                            "content": "UI/UX design"
+                        },
+                        {
+                            "id": uuid.v4(),
+                            "content": "Responsive web design"
+                        },
+                    ]
                 },
                 {
-                    "id": uuid.v4(),
-                    "content": "Frontend web developer"   
+                    "name": "Programming and scripting languages",
+                    "items": [
+                        {
+                            "id": uuid.v4(),
+                            "content": "HTML5 and CSS3"
+                        },
+                        {
+                            "id": uuid.v4(),
+                            "content": "JavaScript"
+                        },
+                        {
+                            "id": uuid.v4(),
+                            "content": "Java"
+                        },
+                        {
+                            "id": uuid.v4(),
+                            "content": "Python"
+                        },
+                    ]
                 },
                 {
-                    "id": uuid.v4(),
-                    "content": "Designer with a keen eye"   
-                },
-                {
-                    "id": uuid.v4(),
-                    "content": "HTML, CSS, JavaScript, Java"   
-                },
-                {
-                    "id": uuid.v4(),
-                    "content": "VueJS, React, Angular"   
-                },
-                
+                    "name": "Frameworks and technologies",
+                    "items": [
+                        {
+                            "id": uuid.v4(),
+                            "content": "Vue.js, React, Angular"
+                        },
+                        {
+                            "id": uuid.v4(),
+                            "content": "Node.js"
+                        },
+                        {
+                            "id": uuid.v4(),
+                            "content": "jQuery"
+                        },
+                        {
+                            "id": uuid.v4(),
+                            "content": "Linux and server administration"
+                        },
+                    ]
+                }
             ],
-            itemsPerRow: 3
         }
     },
-    computed:{
-        rowCount() {     
-            return Math.ceil(this.attributes.length / this.itemsPerRow);
-        }
-    },
-    methods:{
-        itemCountInRow:function(index){
-            return this.attributes.slice((index - 1) * this.itemsPerRow, index * this.itemsPerRow)
-        }
-    }
 }
 </script>
-
-
-<style scoped>
-    @font-face {
-    font-family: "San Francisco";
-    font-weight: 700;
-    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-black-webfont.woff");
-    }
-    * {
-        text-align: center;
-    }
-    .box {
-        padding: 40px;
-        font-size: 24px;
-        font-family: 'San Francisco';
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-</style>
