@@ -1,5 +1,5 @@
 <template>
-    <section class="hero is-info">
+    <section class="hero" :class="kind">
     <div class="hero-body">
         <div class="container">
         <h1 class="title">
@@ -16,7 +16,7 @@
 <script>
 export default {
     name: 'heroIntro',
-    props: ['title', 'subtitle']
+    props: ['title', 'subtitle', 'kind']
 }
 </script>
 
