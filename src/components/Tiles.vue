@@ -1,64 +1,83 @@
 <template>
     <div class="container">
         <br>
-        <div class="tile is-ancestor">
-            <div class="tile is-vertical is-8">
-                <div class="tile">
-                    <div class="tile is-parent is-vertical">
-                        <article class="tile is-child notification is-primary">
-                            <p class="title">19 Years Old</p>
-                            <!-- <p class="subtitle">Top tile</p> -->
-                        </article>
-                        <article class="tile is-child notification is-warning">
-                            <p class="title">Pakistani born</p>
-                            <p class="subtitle"></p>
-                        </article>
-                    </div>
-                    <div class="tile is-parent">
-                        <article class="tile is-child notification is-info">
-                            <p class="title">Middle tile</p>
-                            <p class="subtitle">Something here probably</p>
-                            
-                        </article>
-                    </div>
+        <div class="columns" v-for="i in rowCount" :key="i">
+            <div class="column is-vcentered is-full-mobile" v-for="attribute in itemCountInRow(i)" :key="attribute.id">
+                <div class="box">
+                    {{ attribute.content }}
                 </div>
-                <div class="tile is-parent">
-                    <article class="tile is-child notification is-danger">
-                        <p class="title">Computer Science Student</p>
-                        <p class="subtitle">Second-year Bachelors' program at the University of Twente</p>
-                        <div class="content">
-                            <!-- Content -->
-                        </div>
-                    </article>
-                </div>
-            </div>
-            <div class="tile is-parent">
-                <article class="tile is-child notification is-success">
-                    <div class="content">
-                        <p class="title">Areas of expertise</p>
-                        <p class="subtitle"></p>
-                        <div class="content">
-                           <ul class="is-family-primary is-size-5">
-                               <li>Frontend design, UI/UX</li>
-                               <li>Vue JS, React, Angular</li>
-                           </ul>
-                        </div>
-                    </div>
-                </article>
             </div>
         </div>
     </div>
 </template>
 
+<script>
+import uuid from 'uuid';
+
+export default {
+    name: 'tiles',
+    data() {
+        return {
+            attributes: [
+                {
+                    "id": uuid.v4(),
+                    "content": "19 years old, Pakistani born"   
+                },
+                {
+                    "id": uuid.v4(),
+                    "content": "Bachelors' student at the University of Twente"   
+                },
+                {
+                    "id": uuid.v4(),
+                    "content": "Frontend web developer"   
+                },
+                {
+                    "id": uuid.v4(),
+                    "content": "Designer with a keen eye"   
+                },
+                {
+                    "id": uuid.v4(),
+                    "content": "HTML, CSS, JavaScript, Java"   
+                },
+                {
+                    "id": uuid.v4(),
+                    "content": "VueJS, React, Angular"   
+                },
+                
+            ],
+            itemsPerRow: 3
+        }
+    },
+    computed:{
+        rowCount() {     
+            return Math.ceil(this.attributes.length / this.itemsPerRow);
+        }
+    },
+    methods:{
+        itemCountInRow:function(index){
+            return this.attributes.slice((index - 1) * this.itemsPerRow, index * this.itemsPerRow)
+        }
+    }
+}
+</script>
+
+
 <style scoped>
+    @font-face {
+    font-family: "San Francisco";
+    font-weight: 700;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-black-webfont.woff");
+    }
     * {
         text-align: center;
     }
-    .is-child  {
+    .box {
         padding: 40px;
-    }
-
-    ul li {
-        text-align: left;
+        font-size: 24px;
+        font-family: 'San Francisco';
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 </style>
