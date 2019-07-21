@@ -1,13 +1,13 @@
 <template>
     <div class="container">
-        <div v-for="attribute in attributes" :key="attribute.name">
+        <div v-for="(attribute, index) of attributes" :key="attribute.name">
             <h2 v-if="attribute.name" class="title is-3">
                 {{ attribute.name }}
             </h2>
             <div class="columns is-multiline is-full-mobile">
-                <Tile :content="attribute.content" v-for="attribute in attribute.items" :key="attribute.id" />
+                <Tile :content="childAttribute.content" v-for="childAttribute in attribute.items" :key="childAttribute.id" />
             </div>
-            <hr>
+            <hr v-if="index !== last">
         </div>
     </div>
 </template>
@@ -101,6 +101,11 @@ export default {
                     ]
                 }
             ],
+        }
+    },
+    computed: {
+        last(){
+            return Object.keys(this.attributes).length-1;
         }
     },
 }
