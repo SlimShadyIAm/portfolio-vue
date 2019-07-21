@@ -19,6 +19,9 @@
             <router-link class="navbar-item" to="/about" exact-active-class="is-active">
               About
             </router-link>
+            <router-link class="navbar-item" to="/work" exact-active-class="is-active">
+              Past Work
+            </router-link>
           </div>
         </div>
       </div>
