@@ -2,11 +2,10 @@
 	<div class="about">
 		<HeroIntro title="About me" subtitle="Learn a little about who I am" kind="is-info is-bold" />
 		<section class="section">
-			<Tiles />
-		</section>
-
-		<section class="section">
 			<Contact />
+		</section>
+		<section class="section">
+			<Tiles />
 		</section>
 	</div>
 </template>
