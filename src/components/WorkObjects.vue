@@ -20,10 +20,17 @@ export default {
                     "id": uuid.v4(),
                     "name": "Zira Dashboard",
                     "description": "Esketiit",
-                    "demo": "https://zira.slim.ovh",
-                    "preview": require('@/assets/works/zira.png')
+                    "demo": "https://projects.farooq.xyz/zira/",
+                    "source": "https://github.com/SlimShadyIAm/zira-dashboard/",
+                    "preview": this.importAll(require.context('@/assets/works/zira', false, /\.(png|jpe?g|svg)$/))
+                    // "preview": [require('@/assets/works/zira/zira1.png')]
                 }
             ]
+        }
+    }, 
+    methods: {
+        importAll: function(r) {
+            return r.keys().map(r);
         }
     }
 }
