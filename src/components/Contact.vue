@@ -1,41 +1,32 @@
 <template>
-    <div class="container">
-        <article class="message">
-            <div class="message-header">
-                <p>How to contact me</p>
-            </div>
-            <div class="message-body">
-                <div class="columns">
-                    <div class="column">
-                        <a href="https://github.com/SlimShadyIAm">
-                            <div class="box">
-                                <span class="icon is-large">
-                                    <font-awesome-icon class="fa-6x" :icon="['fab', 'github']" />
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="column">
-                        <a href="https://www.linkedin.com/in/aamir-farooq-7633a918b">
-                            <div class="box">
-                                <span class="icon is-large">
-                                    <font-awesome-icon class="fa-6x" :icon="['fab', 'linkedin']" />
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="column">
-                        <a href="mailto:aamir@farooq.xyz?">
-                            <div class="box">
-                                <span class="icon is-large">
-                                    <font-awesome-icon class="fa-6x" :icon="['fas', 'envelope']" />
-                                </span>
-                            </div>
-                        </a>
-                    </div>                    
+    <div class="columns">
+        <div class="column contact-icon">
+            <a href="https://github.com/SlimShadyIAm">
+                <div class="box">
+                    <span class="icon is-large has-text-white">
+                        <font-awesome-icon class="fa-2x" :icon="['fab', 'github']" />
+                    </span>
                 </div>
-            </div>
-        </article>
+            </a>
+        </div>
+        <div class="column contact-icon">
+            <a href="https://www.linkedin.com/in/farooqaamir">
+                <div class="box">
+                    <span class="icon is-large has-text-white">
+                        <font-awesome-icon class="fa-2x" :icon="['fab', 'linkedin']" />
+                    </span>
+                </div>
+            </a>
+        </div>
+        <div class="column contact-icon">
+            <a href="mailto:aamir@farooq.xyz?">
+                <div class="box">
+                    <span class="icon is-large has-text-white">
+                        <font-awesome-icon class="fa-2x" :icon="['fas', 'envelope']" />
+                    </span>
+                </div>
+            </a>
+        </div>
     </div>
 </template>
 
@@ -60,6 +51,10 @@ export default {
         align-items: center;
         justify-content: center;
         height: 100%;
-        padding: 40px;
+        padding: 0px;
+        background-color: rgba(0, 0, 0, 0.164)
+    }
+    .columns {
+        margin-top: 5px;
     }
 </style>
