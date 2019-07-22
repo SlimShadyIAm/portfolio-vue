@@ -1,5 +1,5 @@
 <template>
-    <section class="hero home-hero is-fullheight" v-on:>
+    <section class="hero home-hero" v-on:>
         <!-- Hero head: will stick at the top -->
         <div class="hero-head">
             <Header />
@@ -16,6 +16,7 @@
                             <span class="mask">AAMIR<br>FAROOQ</span>
                         </p>
                         <p class="intro-text-small">Designer. Developer. Visionary.</p>
+                        <Contact />
                     </div>
                 </div>
             </div>
@@ -25,16 +26,18 @@
 
 <script>
 import Header from '@/components/Header';
+import Contact from '@/components/Contact';
 
 export default {
     name: 'HeroHome',
     components: {
-        Header
+        Header,
+        Contact
     }
 }
 </script>
 
-<style>
+<style scoped>
 @font-face {
   font-family: "San Francisco";
   font-weight: 700;
@@ -131,6 +134,30 @@ p.intro-text-small {
     width: 200px;
     border-radius: 50%;
 }
+
+.hero-body {
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .intro-inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro-inner-left, .intro-inner-right {
+        margin: 0;
+    }
+
+    /* .intro-text {
+        text-align: center !important;
+    } */
+
+    .hero-body {
+        padding: 20px;
+    }
+}
+
 
 </style>
 
