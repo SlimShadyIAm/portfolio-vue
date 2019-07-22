@@ -8,7 +8,7 @@
                 <div class="column is-one-third">
                     <div class="columns">
                         <div class="column">
-                            <figure class="image is-2by1">
+                            <figure class="image">
                                 <img :src="images[0]" alt="">
                             </figure>
                         </div>
@@ -64,5 +64,11 @@ export default {
         .btn-column {
             padding: 5px
         }
+   }
+
+   .image img {
+       max-height: 250px;
+       width: auto;
+       margin: 0 auto;
    }
 </style>
