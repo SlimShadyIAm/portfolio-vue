@@ -1,6 +1,5 @@
 <template>
     <article class="message is-link">
-        <VueGallery :images="images" :index="index" @close="index=null"></VueGallery>
         <div class="message-header">
             <p>{{ work.name }}</p>
         </div>
@@ -15,11 +14,16 @@
                         </div>
                     </div>
                     <div class="columns is-full-on-mobile">
-                        <div class="column">
-                            <a class="button is-fullwidth is-link" @click="index=0">Expand preview</a>
+                        <div class="column btn-column">
+                            <a class="button is-fullwidth is-link" v-on:click="$emit('images', 0, images)">Expand preview</a>
                         </div>
-                        <div class="column">
-                            <a :href="work.demo" class="button is-fullwidth is-link">Visit demo</a>
+                        <div class="column btn-column">
+                            <a :href="work.demo" class="button is-fullwidth is-link" :disabled="work.demo === ''">Visit demo</a>
+                        </div>
+                        <div class="column btn-column">
+                            <a :href="work.source" class="button is-fullwidth is-link" :disabled="work.source === ''">
+                                <font-awesome-icon class="fa" :icon="['fab', 'github']" />
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -32,11 +36,18 @@
 </template>
 
 <script>
-import VueGallery from 'vue-gallery';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+
+library.add(faGithub);
 
 export default {
     name: "WorkObject",
     props: ["work"],
+    components: {
+        FontAwesomeIcon
+    },
     data () {
         return {
             isActive: false,
@@ -44,8 +55,14 @@ export default {
             index: null
         }
     },
-    components: {
-        VueGallery
-    }
+    
 }
 </script>
+
+<style scoped>
+   @media (max-width: 768px) {
+        .btn-column {
+            padding: 5px
+        }
+   }
+</style>
