@@ -13,13 +13,10 @@
         </div>
         <div id="navbarMenuHeroA" class="navbar-menu" :class="{'is-active': navOpen}">
           <div class="navbar-end">
-            <router-link class="navbar-item" to="/" exact-active-class="is-active">
+            <router-link class="navbar-item" :class="{'has-text-white': $route.name == 'home'}" to="/" exact-active-class="is-active">
               Home
             </router-link>
-            <router-link class="navbar-item" to="/about" exact-active-class="is-active">
-              About
-            </router-link>
-            <router-link class="navbar-item" to="/work" exact-active-class="is-active">
+            <router-link class="navbar-item" :class="{'has-text-white': $route.name == 'home'}" to="/work" exact-active-class="is-active">
               Past Work
             </router-link>
           </div>
