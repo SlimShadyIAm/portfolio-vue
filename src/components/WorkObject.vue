@@ -28,7 +28,7 @@
                     </div>
                 </div>
                 <div class="column is-two-thirds">
-                    {{ work.description }}
+                    <p class="is-size-5" v-html="work.description"></p>
                 </div>
             </div>
         </div>
