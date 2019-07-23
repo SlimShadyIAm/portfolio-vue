@@ -8,8 +8,10 @@
             <div class="intro-outer">
                 <div class="intro-inner">
                     <div class="intro-inner-left">
-                        <img class="responsive-img circle profile-pic"
-                            src="https://avatars1.githubusercontent.com/u/10660846?s=460&v=4" alt="" srcset="">
+                        <div v-lazy-container="{ selector: 'img' }">
+                            <img class="responsive-img circle profile-pic"
+                                data-src="https://avatars1.githubusercontent.com/u/10660846?s=460&v=4" alt="" srcset="">
+                        </div>
                     </div>
                     <div class="intro-inner-right">
                         <p class="intro-text">
@@ -27,6 +29,20 @@
 <script>
 import Header from '@/components/Header';
 import Contact from '@/components/Contact';
+import LazyLoad from 'vue-lazyload';
+import Vue from 'vue';
+
+var loading = require('@/assets/loading.gif');
+
+Vue.use(LazyLoad, {
+     observer: true,
+    loading: loading,
+  // optional
+  observerOptions: {
+    rootMargin: '0px',
+    threshold: 0.1
+  }
+})
 
 export default {
     name: 'HeroHome',
@@ -137,6 +153,11 @@ p.intro-text-small {
 
 .hero-body {
     padding: 10px;
+}
+
+img[lazy=loading] {
+    width: 50px !important;
+    height: 50px !important;
 }
 
 @media (max-width: 768px) {

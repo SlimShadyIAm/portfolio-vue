@@ -8,8 +8,8 @@
                 <div class="column is-one-third">
                     <div class="columns">
                         <div class="column">
-                            <figure class="image">
-                                <img :src="images[0]" alt="">
+                            <figure class="image" v-lazy-container="{ selector: 'img' }">
+                                <img :data-src="images[0]" alt="">
                             </figure>
                         </div>
                     </div>
@@ -39,6 +39,21 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+
+import LazyLoad from 'vue-lazyload';
+import Vue from 'vue';
+
+var loading = require('@/assets/loading.gif');
+
+Vue.use(LazyLoad, {
+     observer: true,
+    loading: loading,
+  // optional
+  observerOptions: {
+    rootMargin: '0px',
+    threshold: 0.1
+  }
+})
 
 library.add(faGithub);
 
@@ -71,4 +86,9 @@ export default {
        width: auto;
        margin: 0 auto;
    }
+
+   img[lazy=loading] {
+    width: 50px !important;
+    height: 50px !important;
+}
 </style>
