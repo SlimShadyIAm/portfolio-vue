@@ -82,13 +82,20 @@ export default {
    }
 
    .image img {
-       max-height: 250px;
-       width: auto;
+       max-height: 0;
        margin: 0 auto;
+       overflow: hidden;
    }
 
    img[lazy=loading] {
-    width: 50px !important;
-    height: 50px !important;
-}
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    img[lazy=loaded] {
+        max-height: 250px;
+        width: auto;
+        transition: max-height 0.33s ease-out;
+    }
+
 </style>

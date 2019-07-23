@@ -147,8 +147,9 @@ p.intro-text-small {
 }
 
 .profile-pic {
-    width: 200px;
+    height: 0;
     border-radius: 50%;
+    transition: height 0.33s ease-out;
 }
 
 .hero-body {
@@ -158,6 +159,10 @@ p.intro-text-small {
 img[lazy=loading] {
     width: 50px !important;
     height: 50px !important;
+}
+
+img[lazy=loaded] {
+    height: 200px;
 }
 
 @media (max-width: 768px) {
