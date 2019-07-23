@@ -32,7 +32,7 @@ import Contact from '@/components/Contact';
 import LazyLoad from 'vue-lazyload';
 import Vue from 'vue';
 
-var loading = require('@/assets/loading.gif');
+var loading = require('@/assets/img/loading.gif');
 
 Vue.use(LazyLoad, {
      observer: true,
@@ -55,16 +55,20 @@ export default {
 
 <style scoped>
 @font-face {
-  font-family: "San Francisco";
-  font-weight: 700;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-black-webfont.woff");
+  font-family: "San Francisco Black";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-black-webfont.eot?#iefix) format("embedded-opentype"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-black-webfont.woff2) format("woff2"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-black-webfont.woff) format("woff"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-black-webfont.ttf) format("truetype")
 }
 
+
 @font-face {
-  font-family: "San Francisco";
+  font-family: "San Francisco Bold";
+  font-style: normal;
   font-weight: 400;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
+  src: url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.eot?#iefix) format("embedded-opentype"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff2) format("woff2"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff) format("woff"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.ttf) format("truetype")
 }
+
 
 .home-hero {
      animation: bg-colorfade 30s infinite;
@@ -120,14 +124,13 @@ export default {
 p.intro-text {
     color: #fff;
     font-size: 48px;
-    font-weight: 700;
-    font-family: 'San Francisco';
+    font-family: 'San Francisco Black';
     text-align: right;
     margin: 0;
 }
 
 .mask {
-    background-image: url('../assets/gradient.jpg');
+    background-image: url('../assets/img/gradient.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -142,7 +145,7 @@ p.intro-text-small {
     font-size: 24px;
     margin: 0;
     font-weight: 400;
-    font-family: 'San Francisco';
+    font-family: 'San Francisco Bold';
     text-align: right;
 }
 

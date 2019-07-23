@@ -43,7 +43,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import LazyLoad from 'vue-lazyload';
 import Vue from 'vue';
 
-var loading = require('@/assets/loading.gif');
+var loading = require('@/assets/img/loading.gif');
 
 Vue.use(LazyLoad, {
      observer: true,

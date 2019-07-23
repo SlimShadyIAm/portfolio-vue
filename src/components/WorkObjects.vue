@@ -27,7 +27,7 @@ export default {
                     "description": "Esketiit",
                     "demo": "https://projects.farooq.xyz/zira/",
                     "source": "https://github.com/SlimShadyIAm/zira-dashboard/",
-                    "preview": this.importAll(require.context('@/assets/works/zira', false, /\.(png|jpe?g|svg)$/))
+                    "preview": this.importAll(require.context('@/assets/img/works/zira', false, /\.(png|jpe?g|svg)$/))
                 },
                 {
                      "id": uuid.v4(),
@@ -35,7 +35,7 @@ export default {
                     "description": "Whoa",
                     "demo": "https://projects.farooq.xyz/material-admin/",
                     "source": "https://github.com/SlimShadyIAm/material-admin/",
-                    "preview": this.importAll(require.context('@/assets/works/material-admin', false, /\.(png|jpe?g|svg)$/))
+                    "preview": this.importAll(require.context('@/assets/img/works/material-admin', false, /\.(png|jpe?g|svg)$/))
                 },
                 {
                      "id": uuid.v4(),
@@ -43,7 +43,7 @@ export default {
                     "description": "What's your net worth",
                     "demo": "https://projects.farooq.xyz/ibh/",
                     "source": "https://github.com/SlimShadyIAm/ibh/",
-                    "preview": this.importAll(require.context('@/assets/works/ibh', false, /\.(png|jpe?g|svg)$/))
+                    "preview": this.importAll(require.context('@/assets/img/works/ibh', false, /\.(png|jpe?g|svg)$/))
                 },
                 {
                      "id": uuid.v4(),
@@ -51,7 +51,7 @@ export default {
                     "description": "Yikes",
                     "demo": "https://projects.farooq.xyz/fromun-site",
                     "source": "https://github.com/SlimShadyIAm/fromun-site",
-                    "preview": this.importAll(require.context('@/assets/works/fromun', false, /\.(png|jpe?g|svg)$/))
+                    "preview": this.importAll(require.context('@/assets/img/works/fromun', false, /\.(png|jpe?g|svg)$/))
                 },
                 {
                      "id": uuid.v4(),
@@ -59,7 +59,7 @@ export default {
                     "description": "Yeah haha",
                     "demo": "",
                     "source": "https://github.com/SlimShadyIAm/toadette",
-                    "preview": this.importAll(require.context('@/assets/works/toadette', false, /\.(png|jpe?g|svg)$/))
+                    "preview": this.importAll(require.context('@/assets/img/works/toadette', false, /\.(png|jpe?g|svg)$/))
                 },
                 {
                      "id": uuid.v4(),
@@ -67,7 +67,7 @@ export default {
                     "description": "Yeah haha",
                     "demo": "",
                     "source": "https://github.com/SlimShadyIAm/cros-updates",
-                    "preview": this.importAll(require.context('@/assets/works/cros-updates', false, /\.(png|jpe?g|svg)$/))
+                    "preview": this.importAll(require.context('@/assets/img/works/cros-updates', false, /\.(png|jpe?g|svg)$/))
                 },
                 // {
                 //     "id": uuid.v4(),
@@ -75,7 +75,7 @@ export default {
                 //     "description": "",
                 //     "demo": "",
                 //     "source": "",
-                //     "preview": this.importAll(require.context('@/assets/works/<foler name>', false, /\.(png|jpe?g|svg)$/))
+                //     "preview": this.importAll(require.context('@/assets/img/works/<foler name>', false, /\.(png|jpe?g|svg)$/))
                 // },
 
             ]

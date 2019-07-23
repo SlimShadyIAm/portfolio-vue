@@ -44,9 +44,10 @@ export default {
 
 <style scoped>
 @font-face {
-  font-family: "San Francisco";
+  font-family: "San Francisco Bold";
+  font-style: normal;
   font-weight: 400;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
+  src: url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.eot?#iefix) format("embedded-opentype"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff2) format("woff2"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff) format("woff"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.ttf) format("truetype")
 }
 
 .is-active {
@@ -56,7 +57,7 @@ export default {
 .navbar-brand .navbar-item {
   font-weight: 400;
   font-size: 24px;
-  font-family: 'San Francisco'
+  font-family: 'San Francisco Bold'
 }
 
 .navbar-brand .navbar-item:hover {
