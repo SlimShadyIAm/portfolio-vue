@@ -24,6 +24,7 @@ export default {
                 {
                     "id": uuid.v4(),
                     "name": "Zira Dashboard",
+                    "type": "Website",
                     "description": `This template, based off of my <a href="https://github.com/SlimShadyIAm/material-admin">Material Admin</a> template, was created as a static HTML mockup for an administrative dashboard for <a href="https://zira.ovh">Zira</a>, a Discord bot with almost <b>10 million users</b> and is in use in 57,000 guilds. The dashboard serves as a graphical way to control the bot&#39;s configuration.`,
                     "demo": "https://projects.farooq.xyz/zira/",
                     "source": "https://github.com/SlimShadyIAm/zira-dashboard/",
@@ -32,6 +33,7 @@ export default {
                 {
                      "id": uuid.v4(),
                     "name": "Material Admin",
+                    "type": "Website",
                     "description": `This is a simple template for an administrative panel that is based on the <a href="http://materializecss.com">materializecss.com</a> framework to give the site a beautiful look, adhering to the principles of Google&#39;s Material design language. This template is currently in use as the moderator control panel at <a href="https://opdessertstorm.com">opdessertstorm.com</a>, a game with over <strong>32,000 accounts</strong>.`,
                     "demo": "https://projects.farooq.xyz/material-admin/",
                     "source": "https://github.com/SlimShadyIAm/material-admin/",
@@ -40,6 +42,7 @@ export default {
                 {
                      "id": uuid.v4(),
                     "name": "Interplanetary Banhammer",
+                    "type": "Website",
                     "description": `Now discontinued, this was a partnership effort initiated several large Discord servers, including r/Google, r/Apple, and several others. The goal was to enhance our moderation outreach by sharing banned users' IDs among other partners, so that we could punish trolls, raiders and spammers to great effect. The estimated outreach was around 100,000 unique Discord users. This site was created to serve as an information hub and disclaimer for users joining servers part of IBH.`,
                     "demo": "https://projects.farooq.xyz/ibh/",
                     "source": "https://github.com/SlimShadyIAm/ibh/",
@@ -48,6 +51,7 @@ export default {
                 {
                      "id": uuid.v4(),
                     "name": "Froebel's Model UN 2016",
+                    "type": "Website",
                     "description": "Yikes",
                     "demo": "https://projects.farooq.xyz/fromun-site",
                     "source": "https://github.com/SlimShadyIAm/fromun-site",
@@ -56,6 +60,7 @@ export default {
                 {
                      "id": uuid.v4(),
                     "name": "Toadette",
+                    "type": "Discord bot",
                     "description": "Yeah haha",
                     "demo": "",
                     "source": "https://github.com/SlimShadyIAm/toadette",
@@ -64,6 +69,7 @@ export default {
                 {
                      "id": uuid.v4(),
                     "name": "ChromeOS Updates Bot",
+                    "type": "Discord bot",
                     "description": "Yeah haha",
                     "demo": "",
                     "source": "https://github.com/SlimShadyIAm/cros-updates",
