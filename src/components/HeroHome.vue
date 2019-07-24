@@ -10,7 +10,7 @@
                     <div class="intro-inner-left">
                         <div v-lazy-container="{ selector: 'img' }">
                             <img class="responsive-img circle profile-pic"
-                                data-src="https://avatars1.githubusercontent.com/u/10660846?s=460&v=4" alt="" srcset="">
+                                v-bind:data-src="pfp" alt="" srcset="">
                         </div>
                     </div>
                     <div class="intro-inner-right">
@@ -49,6 +49,11 @@ export default {
     components: {
         Header,
         Contact
+    },
+    data() {
+        return {
+            pfp: require('@/assets/img/pfp.jpg')
+        }
     }
 }
 </script>
