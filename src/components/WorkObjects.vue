@@ -26,7 +26,7 @@ export default {
                     "name": "Runner Assist Dashboard",
                     "type": "Website (ReactJS)",
                     "description": `This project was tasked to us by the University of Twente as a final project for the first year. We were working alongside TRIMM, the client, who had developed sensors for runners to wear which would track their running performance on things like liftoff distance, lower leg impact, push-off force, and several other metrics.<br>Our task was to make sense of the large amounts of data we were given, analyse it and display it in a web dashboard such that a potential customer could view their running performance, see what they need to improve and what they are doing well. The ultimate goal was to generate useful feedback on how runners could improve.<br>We created the frontend, the backend and API (a Java project in a separate private repository), as well as the database structure. Sample data to populate the database was provided to us.<br><i>Unfortunately a demo is unavailable as the database we used was hosted on university servers, which have since been wiped for the next years' projects</i>`,
-                    "demo": "https://trimm.farooq.xyz/",
+                    "demo": "",
                     "source": "https://github.com/SlimShadyIAm/runner-assist-frontend/",
                     "preview": this.importAll(require.context('@/assets/img/works/trimm', false, /\.(png|jpe?g|svg)$/))
                 },
@@ -70,7 +70,7 @@ export default {
                      "id": uuid.v4(),
                     "name": "Toadette",
                     "type": "Discord bot",
-                    "description": "Yeah haha",
+                    "description": "Did you know that Mario Kart has a competitive scene? I know, I'm as surprised as you are.<br>I made this bot for a friend's Mario Kart 8 team Discord as he wanted a simple way for his team to communicate to each other when there was a scrimmage match available for the team to compete in, and for the team members to mark themselves as available. You can use the command <code>!start</code> to notify the server that a war is starting, and teammates can join the lineup by typing <code>!can</code>. It's that easy.",
                     "demo": "",
                     "source": "https://github.com/SlimShadyIAm/toadette",
                     "preview": this.importAll(require.context('@/assets/img/works/toadette', false, /\.(png|jpe?g|svg)$/))
