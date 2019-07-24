@@ -25,7 +25,7 @@ export default {
                     "id": uuid.v4(),
                     "name": "Runner Assist Dashboard",
                     "type": "Website (ReactJS)",
-                    "description": `This project was tasked to us by the University of Twente as a final project for the first year. We were working alongside TRIMM, the client, who had developed sensors for runners to wear which would track their running performance on things like liftoff distance, lower leg impact, push-off force, and several other metrics.<br>Our task was to make sense of this and display it in a web dashboard such that a potential customer could view their running performance, see what they need to improve and what they are doing well. The ultimate goal was to generate useful feedback on how runners could improve.<br>We created the frontend, the backend and API (a Java project in a separate private repository), as well as the database structure. Sample data to populate the database was provided to us.<br><i>Unfortunately a demo is unavailable as the database we used was hosted on university servers, which have since been wiped for the next years' projects</i>`,
+                    "description": `This project was tasked to us by the University of Twente as a final project for the first year. We were working alongside TRIMM, the client, who had developed sensors for runners to wear which would track their running performance on things like liftoff distance, lower leg impact, push-off force, and several other metrics.<br>Our task was to make sense of the large amounts of data we were given, analyse it and display it in a web dashboard such that a potential customer could view their running performance, see what they need to improve and what they are doing well. The ultimate goal was to generate useful feedback on how runners could improve.<br>We created the frontend, the backend and API (a Java project in a separate private repository), as well as the database structure. Sample data to populate the database was provided to us.<br><i>Unfortunately a demo is unavailable as the database we used was hosted on university servers, which have since been wiped for the next years' projects</i>`,
                     "demo": "https://trimm.farooq.xyz/",
                     "source": "https://github.com/SlimShadyIAm/runner-assist-frontend/",
                     "preview": this.importAll(require.context('@/assets/img/works/trimm', false, /\.(png|jpe?g|svg)$/))
@@ -52,7 +52,7 @@ export default {
                      "id": uuid.v4(),
                     "name": "Froebel's Model UN 2016",
                     "type": "Website",
-                    "description": "Yikes",
+                    "description": `This website was created to be used as the official site for the Model UN of Froebel's International School, the high school I attended. Here, students were able to find information regarding the host team staff, scheduling as well as how to register to participate. The final version, tweaked by Rockville, can be found at <a href="froebels.edu.pk/fromun">froebels.edu.pk/fromun.</a>, though it has since been modified by students to reflect information from newer years.`,
                     "demo": "https://projects.farooq.xyz/fromun-site",
                     "source": "https://github.com/SlimShadyIAm/fromun-site",
                     "preview": this.importAll(require.context('@/assets/img/works/fromun', false, /\.(png|jpe?g|svg)$/))
