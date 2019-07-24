@@ -1,6 +1,6 @@
 <template>
 	<div id="about">
-		<HeroIntro title="About me" subtitle="Learn a little about who I am" kind="is-info is-bold" />
+		<HeroIntro title="About me" subtitle="Learn a little about who I am" kind="is-info" />
 		<section class="section">
 			<Tiles />
 		</section>
