@@ -23,6 +23,15 @@ export default {
             workData: [
                 {
                     "id": uuid.v4(),
+                    "name": "Runner Assist Dashboard",
+                    "type": "Website (ReactJS)",
+                    "description": `This project was tasked to us by the University of Twente as a final project for the first year. We were working alongside TRIMM, the client, who had developed sensors for runners to wear which would track their running performance on things like liftoff distance, lower leg impact, push-off force, and several other metrics.<br>Our task was to make sense of this and display it in a web dashboard such that a potential customer could view their running performance, see what they need to improve and what they are doing well. The ultimate goal was to generate useful feedback on how runners could improve.<br>We created the frontend, the backend and API (a Java project in a separate private repository), as well as the database structure. Sample data to populate the database was provided to us.<br><i>Unfortunately a demo is unavailable as the database we used was hosted on university servers, which have since been wiped for the next years' projects</i>`,
+                    "demo": "https://trimm.farooq.xyz/",
+                    "source": "https://github.com/SlimShadyIAm/runner-assist-frontend/",
+                    "preview": this.importAll(require.context('@/assets/img/works/trimm', false, /\.(png|jpe?g|svg)$/))
+                },
+                {
+                    "id": uuid.v4(),
                     "name": "Zira Dashboard",
                     "type": "Website",
                     "description": `This template, based off of my <a href="https://github.com/SlimShadyIAm/material-admin">Material Admin</a> template, was created as a static HTML mockup for an administrative dashboard for <a href="https://zira.ovh">Zira</a>, a Discord bot with almost <b>10 million users</b> and is in use in 57,000 guilds. The dashboard serves as a graphical way to control the bot&#39;s configuration.`,
@@ -41,21 +50,21 @@ export default {
                 },
                 {
                      "id": uuid.v4(),
-                    "name": "Interplanetary Banhammer",
-                    "type": "Website",
-                    "description": `Now discontinued, this was a partnership effort initiated several large Discord servers, including r/Google, r/Apple, and several others. The goal was to enhance our moderation outreach by sharing banned users' IDs among other partners, so that we could punish trolls, raiders and spammers to great effect. The estimated outreach was around 100,000 unique Discord users. This site was created to serve as an information hub and disclaimer for users joining servers part of IBH.`,
-                    "demo": "https://projects.farooq.xyz/ibh/",
-                    "source": "https://github.com/SlimShadyIAm/ibh/",
-                    "preview": this.importAll(require.context('@/assets/img/works/ibh', false, /\.(png|jpe?g|svg)$/))
-                },
-                {
-                     "id": uuid.v4(),
                     "name": "Froebel's Model UN 2016",
                     "type": "Website",
                     "description": "Yikes",
                     "demo": "https://projects.farooq.xyz/fromun-site",
                     "source": "https://github.com/SlimShadyIAm/fromun-site",
                     "preview": this.importAll(require.context('@/assets/img/works/fromun', false, /\.(png|jpe?g|svg)$/))
+                },
+                {
+                     "id": uuid.v4(),
+                    "name": "Interplanetary Banhammer",
+                    "type": "Website",
+                    "description": `Now discontinued, this was a partnership effort initiated several large Discord servers, including r/Google, r/Apple, and several others. The goal was to enhance our moderation outreach by sharing banned users' IDs among other partners, so that we could punish trolls, raiders and spammers to great effect. The estimated outreach was around 100,000 unique Discord users. This site was created to serve as an information hub and disclaimer for users joining servers part of IBH.`,
+                    "demo": "https://projects.farooq.xyz/ibh/",
+                    "source": "https://github.com/SlimShadyIAm/ibh/",
+                    "preview": this.importAll(require.context('@/assets/img/works/ibh', false, /\.(png|jpe?g|svg)$/))
                 },
                 {
                      "id": uuid.v4(),
