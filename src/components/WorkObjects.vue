@@ -52,7 +52,7 @@ export default {
                      "id": uuid.v4(),
                     "name": "Froebel's Model UN 2016",
                     "type": "Website",
-                    "description": `This website was created to be used as the official site for the Model UN of Froebel's International School, the high school I attended. Here, students were able to find information regarding the host team staff, scheduling as well as how to register to participate. The final version, tweaked by Rockville, can be found at <a href="froebels.edu.pk/fromun">froebels.edu.pk/fromun.</a>, though it has since been modified by students to reflect information from newer years.`,
+                    "description": `This website was created to be used as the official site for the Model UN of Froebel's International School, the high school I attended. Here, students were able to find information regarding the host team staff, scheduling as well as how to register to participate. The final version, tweaked by Rockville, can be found at <a href="https://froebels.edu.pk/fromun">froebels.edu.pk/fromun.</a>, though it has since been modified by students to reflect information from newer years.`,
                     "demo": "https://projects.farooq.xyz/fromun-site",
                     "source": "https://github.com/SlimShadyIAm/fromun-site",
                     "preview": this.importAll(require.context('@/assets/img/works/fromun', false, /\.(png|jpe?g|svg)$/))
