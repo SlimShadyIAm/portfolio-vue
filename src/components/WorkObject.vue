@@ -5,7 +5,7 @@
         </div>
         <div class="message-body">
             <div class="columns is-full-on-mobile">
-                <div class="column is-one-third">
+                <div class="column is-one-third preview-left">
                     <div class="columns">
                         <div class="column">
                             <figure class="image" v-lazy-container="{ selector: 'img' }">
@@ -98,4 +98,10 @@ export default {
         transition: max-height 0.33s ease-out;
     }
 
+    .preview-left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
 </style>
