@@ -1,8 +1,6 @@
 <template>
 	<div class="column is-one-quarter">
-		<div class="box">
-			{{ content }}
-		</div>
+		<div class="box" v-html="content"></div>
 	</div>
 </template>
 

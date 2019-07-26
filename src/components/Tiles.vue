@@ -33,11 +33,11 @@ export default {
 					items: [
 						{
 							id: uuid.v4(),
-							content: "19 years old"
+							content: "Student at University of Twente"
 						},
 						{
 							id: uuid.v4(),
-							content: "Bachelors' at University of Twente"
+							content: "2nd year Computer Science major"
 						},
 						{
 							id: uuid.v4(),

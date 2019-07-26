@@ -22,7 +22,7 @@
 							<span class="mask">AAMIR<br />FAROOQ</span>
 						</p>
 						<p class="intro-text-small">
-							Designer. Developer. Visionary.
+							Designer. Developer. Dreamer.
 						</p>
 						<Contact />
 					</div>
@@ -187,7 +187,7 @@ img[lazy="loading"] {
 }
 
 img[lazy="loaded"] {
-	height: 200px;
+	height: 250px;
 }
 
 @media (max-width: 768px) {
