@@ -5,10 +5,7 @@
 				<a href="https://github.com/SlimShadyIAm">
 					<div class="box">
 						<span class="icon is-large has-text-white">
-							<font-awesome-icon
-								class="fa-2x"
-								:icon="['fab', 'github']"
-							/>
+							<font-awesome-icon class="fa-2x" :icon="['fab', 'github']" />
 						</span>
 					</div>
 				</a>
@@ -17,22 +14,16 @@
 				<a href="https://www.linkedin.com/in/farooqaamir">
 					<div class="box">
 						<span class="icon is-large has-text-white">
-							<font-awesome-icon
-								class="fa-2x"
-								:icon="['fab', 'linkedin']"
-							/>
+							<font-awesome-icon class="fa-2x" :icon="['fab', 'linkedin']" />
 						</span>
 					</div>
 				</a>
 			</div>
 			<div class="column contact-icon">
-				<a href="mailto:aamir@farooq.xyz?">
+				<a href="mailto:me@aamirfarooq.dev?">
 					<div class="box">
 						<span class="icon is-large has-text-white">
-							<font-awesome-icon
-								class="fa-2x"
-								:icon="['fas', 'envelope']"
-							/>
+							<font-awesome-icon class="fa-2x" :icon="['fas', 'envelope']" />
 						</span>
 					</div>
 				</a>
@@ -40,9 +31,7 @@
 		</div>
 		<div class="columns">
 			<div class="column">
-				<router-link to="/work" class="box box-work"
-					>View my past work</router-link
-				>
+				<router-link to="/work" class="box box-work">View my past work</router-link>
 			</div>
 		</div>
 	</div>
