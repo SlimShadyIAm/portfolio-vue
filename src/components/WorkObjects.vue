@@ -1,16 +1,7 @@
 <template>
 	<section class="section">
-		<WorkObject
-			v-for="work in workData"
-			:key="work.id"
-			:work="work"
-			v-on:images="setIndex"
-		/>
-		<VueGallery
-			:images="images"
-			:index="index"
-			@close="index = null"
-		></VueGallery>
+		<WorkObject v-for="work in workData" :key="work.id" :work="work" v-on:images="setIndex" />
+		<VueGallery :images="images" :index="index" @close="index = null"></VueGallery>
 	</section>
 </template>
 
@@ -51,7 +42,7 @@ export default {
 					name: "Zira Dashboard",
 					type: "Website",
 					description: `This template, based off of my <a href="https://github.com/SlimShadyIAm/material-admin">Material Admin</a> template, was created as a static HTML mockup for an administrative dashboard for <a href="https://zira.ovh">Zira</a>, a Discord bot with almost <b>10 million users</b> and is in use in 57,000 guilds. The dashboard serves as a graphical way to control the bot&#39;s configuration.`,
-					demo: "https://projects.farooq.xyz/zira/",
+					demo: "https://projects.aamirfarooq.dev/zira/",
 					source: "https://github.com/SlimShadyIAm/zira-dashboard/",
 					preview: this.importAll(
 						require.context(
@@ -66,7 +57,7 @@ export default {
 					name: "Material Admin",
 					type: "Website",
 					description: `This is a simple template for an administrative panel that is based on the <a href="http://materializecss.com">materializecss.com</a> framework to give the site a beautiful look, adhering to the principles of Google&#39;s Material design language. This template is currently in use as the moderator control panel at <a href="https://opdessertstorm.com">opdessertstorm.com</a>, a game with over <strong>32,000 accounts</strong>.`,
-					demo: "https://projects.farooq.xyz/material-admin/",
+					demo: "https://projects.aamirfarooq.dev/material-admin/",
 					source: "https://github.com/SlimShadyIAm/material-admin/",
 					preview: this.importAll(
 						require.context(
@@ -81,7 +72,7 @@ export default {
 					name: "Froebel's Model UN 2016",
 					type: "Website",
 					description: `This website was created to be used as the official site for the Model UN of Froebel's International School, the high school I attended. Here, students were able to find information regarding the host team staff, scheduling as well as how to register to participate. The final version, tweaked by Rockville, can be found at <a href="https://froebels.edu.pk/fromun">froebels.edu.pk/fromun.</a>, though it has since been modified by students to reflect information from newer years.`,
-					demo: "https://projects.farooq.xyz/fromun-site",
+					demo: "https://projects.aamirfarooq.dev/fromun-site",
 					source: "https://github.com/SlimShadyIAm/fromun-site",
 					preview: this.importAll(
 						require.context(
@@ -96,7 +87,7 @@ export default {
 					name: "Interplanetary Banhammer",
 					type: "Website",
 					description: `Now discontinued, this was a partnership effort initiated several large Discord servers, including r/Google, r/Apple, and several others. The goal was to enhance our moderation outreach by sharing banned users' IDs among other partners, so that we could punish trolls, raiders and spammers to great effect. The estimated outreach was around 100,000 unique Discord users. This site was created to serve as an information hub and disclaimer for users joining servers part of IBH.`,
-					demo: "https://projects.farooq.xyz/ibh/",
+					demo: "https://projects.aamirfarooq.dev/ibh/",
 					source: "https://github.com/SlimShadyIAm/ibh/",
 					preview: this.importAll(
 						require.context(
