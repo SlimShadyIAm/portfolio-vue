@@ -39,6 +39,21 @@ export default {
 				},
 				{
 					id: uuid.v4(),
+					name: "AussieJump",
+					type: "Game (Electron)",
+					description: `This was a game written as a final group project for the 5th module at the Unviersity of Twente.<br>Aussie jump is a sidescroller game inspired by Flappy Bird and Google's T-Rex game on Chrome. It features an Australian theme, as the character you control is a kangaroo and you avoid cactuses which come at you from two sides at varying speeds. Use your arrow keys, or tilt the sensor to avoid the obstacles and get the highest score you can. Boing! Boing! Boing!<br />The game is written in Electron v6.1.2 and makes use of the <code>onoff</code> NPM package to support communication over GPIO with an FPGA, which is connected to an accelerometer. This gives the user the choice to control the game with a keyboard or motion controls.<br><i>A demo video is available <a href="https://youtu.be/Kcm_Yac7x3U">here</a>, and you can play yourself if you clone the repository and run it yourself, however it will run super fast as it was designed to be run on a Raspberry Pi which is much slower. You can't use motion controls without our hardware setup (FPGA+accelerometer)</i>`,
+					demo: "https://youtu.be/Kcm_Yac7x3U",
+					source: "https://github.com/SlimShadyIAm/runner-assist-frontend/AussieJump",
+					preview: this.importAll(
+						require.context(
+							"@/assets/img/works/aussiejump",
+							false,
+							/\.(png|jpe?g|svg)$/
+						)
+					)
+				},
+				{
+					id: uuid.v4(),
 					name: "Zira Dashboard",
 					type: "Website",
 					description: `This template, based off of my <a href="https://github.com/SlimShadyIAm/material-admin">Material Admin</a> template, was created as a static HTML mockup for an administrative dashboard for <a href="https://zira.ovh">Zira</a>, a Discord bot with almost <b>10 million users</b> and is in use in 57,000 guilds. The dashboard serves as a graphical way to control the bot&#39;s configuration.`,
@@ -84,20 +99,20 @@ export default {
 				},
 				{
 					id: uuid.v4(),
-					name: "Interplanetary Banhammer",
-					type: "Website",
-					description: `Now discontinued, this was a partnership effort initiated several large Discord servers, including r/Google, r/Apple, and several others. The goal was to enhance our moderation outreach by sharing banned users' IDs among other partners, so that we could punish trolls, raiders and spammers to great effect. The estimated outreach was around 100,000 unique Discord users. This site was created to serve as an information hub and disclaimer for users joining servers part of IBH.`,
-					demo: "https://projects.aamirfarooq.dev/ibh/",
-					source: "https://github.com/SlimShadyIAm/ibh/",
+					name: "Taggy McTagface",
+					type: "Discord bot (NodeJS)",
+					description: "This bot was created for the <a href='https://discord.gg/chromeos'>r/ChromeOS Discord server</a>.<br>It provides various utilities useful for regular members, such as the ability to add custom text snippets to the database so that when you invoke a command, it will post that snippet. This is very useful, for example in the context of support, when you want to post a series of common Linux commands; you wouldn't have to type them out by hand, rather just type something like <code>$ubuntu</code> and the bot would post the pre-saved response.<br>Another key feature is that it makes use of a <a href='https://cros-updates.netlify.com/'>ChromeOS update release API</a>, so you can check which version and platform number a device model is on; useful for seeing how device updates are rolled out to all models.",
+					demo: "https://discord.gg/chromeos",
+					source: "https://github.com/SlimShadyIAm/taggymctagface",
 					preview: this.importAll(
 						require.context(
-							"@/assets/img/works/ibh",
+							"@/assets/img/works/taggymctagface",
 							false,
 							/\.(png|jpe?g|svg)$/
 						)
 					)
 				},
-				{
+								{
 					id: uuid.v4(),
 					name: "Toadette",
 					type: "Discord bot",
@@ -113,12 +128,27 @@ export default {
 						)
 					)
 				},
+								{
+					id: uuid.v4(),
+					name: "Interplanetary Banhammer",
+					type: "Website",
+					description: `Now discontinued, this was a partnership effort initiated several large Discord servers, including r/Google, r/Apple, and several others. The goal was to enhance our moderation outreach by sharing banned users' IDs among other partners, so that we could punish trolls, raiders and spammers to great effect. The estimated outreach was around 100,000 unique Discord users. This site was created to serve as an information hub and disclaimer for users joining servers part of IBH.`,
+					demo: "https://projects.aamirfarooq.dev/ibh/",
+					source: "https://github.com/SlimShadyIAm/ibh/",
+					preview: this.importAll(
+						require.context(
+							"@/assets/img/works/ibh",
+							false,
+							/\.(png|jpe?g|svg)$/
+						)
+					)
+				},
 				{
 					id: uuid.v4(),
 					name: "ChromeOS Updates Bot",
-					type: "Discord bot",
-					description: "Yeah haha",
-					demo: "",
+					type: "Discord bot (NodeJS)",
+					description: "This bot was created for the <a href='https://discord.gg/chromeos'>r/ChromeOS Discord server</a>.<br>It posts a notification in the server when a new update is released for ChromeOS, the operating system that runs on Chromebooks",
+					demo: "https://discord.gg/chromeos",
 					source: "https://github.com/SlimShadyIAm/cros-updates",
 					preview: this.importAll(
 						require.context(
