@@ -43,7 +43,7 @@ export default {
 					type: "Game (Electron)",
 					description: `This was a game written as a final group project for the 5th module at the Unviersity of Twente.<br>Aussie jump is a sidescroller game inspired by Flappy Bird and Google's T-Rex game on Chrome. It features an Australian theme, as the character you control is a kangaroo and you avoid cactuses which come at you from two sides at varying speeds. Use your arrow keys, or tilt the sensor to avoid the obstacles and get the highest score you can. Boing! Boing! Boing!<br />The game is written in Electron v6.1.2 and makes use of the <code>onoff</code> NPM package to support communication over GPIO with an FPGA, which is connected to an accelerometer. This gives the user the choice to control the game with a keyboard or motion controls.<br><i>A demo video is available <a href="https://youtu.be/Kcm_Yac7x3U">here</a>, and you can play yourself if you clone the repository and run it yourself, however it will run super fast as it was designed to be run on a Raspberry Pi which is much slower. You can't use motion controls without our hardware setup (FPGA+accelerometer)</i>`,
 					demo: "https://youtu.be/Kcm_Yac7x3U",
-					source: "https://github.com/SlimShadyIAm/runner-assist-frontend/AussieJump",
+					source: "https://github.com/SlimShadyIAm/AussieJump",
 					preview: this.importAll(
 						require.context(
 							"@/assets/img/works/aussiejump",
