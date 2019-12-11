@@ -55,7 +55,7 @@ export default {
 				{
 					id: uuid.v4(),
 					name: "Zira Dashboard",
-					type: "Website",
+					type: "Website (Static HTML)",
 					description: `This template, based off of my <a href="https://github.com/SlimShadyIAm/material-admin">Material Admin</a> template, was created as a static HTML mockup for an administrative dashboard for <a href="https://zira.ovh">Zira</a>, a Discord bot with almost <b>10 million users</b> and is in use in 57,000 guilds. The dashboard serves as a graphical way to control the bot&#39;s configuration.`,
 					demo: "https://projects.aamirfarooq.dev/zira/",
 					source: "https://github.com/SlimShadyIAm/zira-dashboard/",
@@ -69,23 +69,8 @@ export default {
 				},
 				{
 					id: uuid.v4(),
-					name: "Material Admin",
-					type: "Website",
-					description: `This is a simple template for an administrative panel that is based on the <a href="http://materializecss.com">materializecss.com</a> framework to give the site a beautiful look, adhering to the principles of Google&#39;s Material design language. This template is currently in use as the moderator control panel at <a href="https://opdessertstorm.com">opdessertstorm.com</a>, a game with over <strong>32,000 accounts</strong>.`,
-					demo: "https://projects.aamirfarooq.dev/material-admin/",
-					source: "https://github.com/SlimShadyIAm/material-admin/",
-					preview: this.importAll(
-						require.context(
-							"@/assets/img/works/material-admin",
-							false,
-							/\.(png|jpe?g|svg)$/
-						)
-					)
-				},
-				{
-					id: uuid.v4(),
 					name: "Froebel's Model UN 2016",
-					type: "Website",
+					type: "Website (Static HTML)",
 					description: `This website was created to be used as the official site for the Model UN of Froebel's International School, the high school I attended. Here, students were able to find information regarding the host team staff, scheduling as well as how to register to participate. The final version, tweaked by Rockville, can be found at <a href="https://froebels.edu.pk/fromun">froebels.edu.pk/fromun.</a>, though it has since been modified by students to reflect information from newer years.`,
 					demo: "https://projects.aamirfarooq.dev/fromun-site",
 					source: "https://github.com/SlimShadyIAm/fromun-site",
@@ -115,7 +100,7 @@ export default {
 								{
 					id: uuid.v4(),
 					name: "Toadette",
-					type: "Discord bot",
+					type: "Discord bot (NodeJS)",
 					description:
 						"Did you know that Mario Kart has a competitive scene? I know, I'm as surprised as you are.<br>I made this bot for a friend's Mario Kart 8 team Discord as he wanted a simple way for his team to communicate to each other when there was a scrimmage match available for the team to compete in, and for the team members to mark themselves as available. You can use the command <code>!start</code> to notify the server that a war is starting, and teammates can join the lineup by typing <code>!can</code>. It's that easy.",
 					demo: "",
@@ -128,21 +113,7 @@ export default {
 						)
 					)
 				},
-								{
-					id: uuid.v4(),
-					name: "Interplanetary Banhammer",
-					type: "Website",
-					description: `Now discontinued, this was a partnership effort initiated several large Discord servers, including r/Google, r/Apple, and several others. The goal was to enhance our moderation outreach by sharing banned users' IDs among other partners, so that we could punish trolls, raiders and spammers to great effect. The estimated outreach was around 100,000 unique Discord users. This site was created to serve as an information hub and disclaimer for users joining servers part of IBH.`,
-					demo: "https://projects.aamirfarooq.dev/ibh/",
-					source: "https://github.com/SlimShadyIAm/ibh/",
-					preview: this.importAll(
-						require.context(
-							"@/assets/img/works/ibh",
-							false,
-							/\.(png|jpe?g|svg)$/
-						)
-					)
-				},
+				
 				{
 					id: uuid.v4(),
 					name: "ChromeOS Updates Bot",
@@ -157,7 +128,22 @@ export default {
 							/\.(png|jpe?g|svg)$/
 						)
 					)
-				}
+				},
+				{
+					id: uuid.v4(),
+					name: "This website!",
+					type: "Website (VueJS)",
+					description: `This website was written by me, using the frontend JavaScript framework <a href='https://vuejs.org'>Vue.js</a>, and <a href="https://bulma.io">Bulma</a> as the CSS framework.`,
+					demo: "https://aamirfarooq.dev",
+					source: "https://github.com/SlimShadyIAm/portfolio-vue/",
+					preview: this.importAll(
+						require.context(
+							"@/assets/img/works/portfolio",
+							false,
+							/\.(png|jpe?g|svg)$/
+						)
+					)
+				},
 				// {
 				//     "id": uuid.v4(),
 				//     "name": "",
