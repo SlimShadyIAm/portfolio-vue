@@ -54,6 +54,21 @@ export default {
 				},
 				{
 					id: uuid.v4(),
+					name: "Material Admin",
+					type: "Website",
+					description: `This is a simple template for an administrative panel that is based on the <a href="http://materializecss.com">materializecss.com</a> framework to give the site a beautiful look, adhering to the principles of Google&#39;s Material design language. This template is currently in use as the moderator control panel at <a href="https://opdessertstorm.com">opdessertstorm.com</a>, a game with over <strong>32,000 accounts</strong>.`,
+					demo: "https://projects.aamirfarooq.dev/material-admin/",
+					source: "https://github.com/SlimShadyIAm/material-admin/",
+					preview: this.importAll(
+						require.context(
+							"@/assets/img/works/material-admin",
+							false,
+							/\.(png|jpe?g|svg)$/
+						)
+					)
+				},
+				{
+					id: uuid.v4(),
 					name: "Zira Dashboard",
 					type: "Website (Static HTML)",
 					description: `This template, based off of my <a href="https://github.com/SlimShadyIAm/material-admin">Material Admin</a> template, was created as a static HTML mockup for an administrative dashboard for <a href="https://zira.ovh">Zira</a>, a Discord bot with almost <b>10 million users</b> and is in use in 57,000 guilds. The dashboard serves as a graphical way to control the bot&#39;s configuration.`,
@@ -86,7 +101,8 @@ export default {
 					id: uuid.v4(),
 					name: "Taggy McTagface",
 					type: "Discord bot (NodeJS)",
-					description: "This bot was created for the <a href='https://discord.gg/chromeos'>r/ChromeOS Discord server</a>.<br>It provides various utilities useful for regular members, such as the ability to add custom text snippets to the database so that when you invoke a command, it will post that snippet. This is very useful, for example in the context of support, when you want to post a series of common Linux commands; you wouldn't have to type them out by hand, rather just type something like <code>$ubuntu</code> and the bot would post the pre-saved response.<br>Another key feature is that it makes use of a <a href='https://cros-updates.netlify.com/'>ChromeOS update release API</a>, so you can check which version and platform number a device model is on; useful for seeing how device updates are rolled out to all models.",
+					description:
+						"This bot was created for the <a href='https://discord.gg/chromeos'>r/ChromeOS Discord server</a>.<br>It provides various utilities useful for regular members, such as the ability to add custom text snippets to the database so that when you invoke a command, it will post that snippet. This is very useful, for example in the context of support, when you want to post a series of common Linux commands; you wouldn't have to type them out by hand, rather just type something like <code>$ubuntu</code> and the bot would post the pre-saved response.<br>Another key feature is that it makes use of a <a href='https://cros-updates.netlify.com/'>ChromeOS update release API</a>, so you can check which version and platform number a device model is on; useful for seeing how device updates are rolled out to all models.",
 					demo: "https://discord.gg/chromeos",
 					source: "https://github.com/SlimShadyIAm/taggymctagface",
 					preview: this.importAll(
@@ -97,7 +113,7 @@ export default {
 						)
 					)
 				},
-								{
+				{
 					id: uuid.v4(),
 					name: "Toadette",
 					type: "Discord bot (NodeJS)",
@@ -113,12 +129,13 @@ export default {
 						)
 					)
 				},
-				
+
 				{
 					id: uuid.v4(),
 					name: "ChromeOS Updates Bot",
 					type: "Discord bot (NodeJS)",
-					description: "This bot was created for the <a href='https://discord.gg/chromeos'>r/ChromeOS Discord server</a>.<br>It posts a notification in the server when a new update is released for ChromeOS, the operating system that runs on Chromebooks",
+					description:
+						"This bot was created for the <a href='https://discord.gg/chromeos'>r/ChromeOS Discord server</a>.<br>It posts a notification in the server when a new update is released for ChromeOS, the operating system that runs on Chromebooks",
 					demo: "https://discord.gg/chromeos",
 					source: "https://github.com/SlimShadyIAm/cros-updates",
 					preview: this.importAll(
@@ -143,14 +160,21 @@ export default {
 							/\.(png|jpe?g|svg)$/
 						)
 					)
-				},
+				}
 				// {
-				//     "id": uuid.v4(),
-				//     "name": "",
-				//     "description": "",
-				//     "demo": "",
-				//     "source": "",
-				//     "preview": this.importAll(require.context('@/assets/img/works/<foler name>', false, /\.(png|jpe?g|svg)$/))
+				// 	id: uuid.v4(),
+				// 	name: "",
+				// 	type: "",
+				// 	description: ``,
+				// 	demo: "",
+				// 	source: "",
+				// 	preview: this.importAll(
+				// 		require.context(
+				// 			"@/assets/img/works/<foldername>",
+				// 			false,
+				// 			/\.(png|jpe?g|svg)$/
+				// 		)
+				// 	)
 				// },
 			]
 		};
