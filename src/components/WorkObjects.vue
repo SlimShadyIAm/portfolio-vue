@@ -1,7 +1,16 @@
 <template>
 	<section class="section">
-		<WorkObject v-for="work in workData" :key="work.id" :work="work" v-on:images="setIndex" />
-		<VueGallery :images="images" :index="index" @close="index = null"></VueGallery>
+		<WorkObject
+			v-for="work in workData"
+			:key="work.id"
+			:work="work"
+			v-on:images="setIndex"
+		/>
+		<VueGallery
+			:images="images"
+			:index="index"
+			@close="index = null"
+		></VueGallery>
 	</section>
 </template>
 
@@ -24,8 +33,8 @@ export default {
 				{
 					id: uuid.v4(),
 					name: "Runner Assist Dashboard",
-					type: "Website (ReactJS)",
-					description: `This project was tasked to us by the University of Twente as a final project for the first year. We were working alongside TRIMM, the client, who had developed sensors for runners to wear which would track their running performance on things like liftoff distance, lower leg impact, push-off force, and several other metrics.<br>Our task was to make sense of the large amounts of data we were given, analyse it and display it in a web dashboard such that a potential customer could view their running performance, see what they need to improve and what they are doing well. The ultimate goal was to generate useful feedback on how runners could improve.<br>We created the frontend, the backend and API (a Java project in a separate private repository), as well as the database structure. Sample data to populate the database was provided to us.<br><i>Unfortunately a demo is unavailable as the database we used was hosted on university servers, which have since been wiped for the next years' projects</i>`,
+					type: "Web App (ReactJS)",
+					description: `This project was tasked to us by the University of Twente as a final project for the first year of the computer science course. We were working alongside TRIMM, the client, who had developed sensors for runners to wear which would track their running performance on things like liftoff distance, lower leg impact, push-off force, and several other metrics.<br>Our task was to make sense of the large amounts of data we were given, analyse it and display it in a web dashboard such that a potential customer could view their running performance, see what they need to improve and what they are doing well. The ultimate goal was to generate useful feedback on how runners could improve.<br>We created the frontend, the backend and API (a Java project in a separate private repository), as well as the database structure. Sample data to populate the database was provided to us.<br><i>Unfortunately a demo is unavailable as the database we used was hosted on university servers, which have since been wiped for the next years' projects</i>`,
 					demo: "",
 					source:
 						"https://github.com/SlimShadyIAm/runner-assist-frontend/",
@@ -54,8 +63,38 @@ export default {
 				},
 				{
 					id: uuid.v4(),
+					name: "TalkBoard",
+					type: "Website (VueJS)",
+					description: `A website I created for the host of the TalkBoard podcast, Aaron, a prominent member of the iOS jailbreak community. The podcast invites the most talented developers, from the jailbreaking scene and the general tech industry, for a candid conversation about their passion for their work.`,
+					demo: "https://talkboard.live/",
+					source: "https://github.com/SlimShadyIAm/talkboard",
+					preview: this.importAll(
+						require.context(
+							"@/assets/img/works/talkboard",
+							false,
+							/\.(png|jpe?g|svg)$/
+						)
+					)
+				},
+				{
+					id: uuid.v4(),
+					name: "EZ-Sign",
+					type: "Web App (VueJS)",
+					description: `This web app was created as a high fidelity proof of concept, as a final project for the human-computer interaction course at the University of Twente.<br><br>Every day, sign language users, including deaf people, and the hearing or speech impaired, struggle with interactions considered trivial to those who can communicate with others verbally. For this marginalized group of our society, we have developed an app that aims to ease some of this difficulty by providing them with a smart sign language translation assistant. While previously sign language users would typically resort to using a pen and piece of paper, gesturing, or typing in the notes app on a smartphone, our application aims to replace these older methods in lieu of a professional sign language interpreter.<br><i></i>This app is a proof-of-concept prototype, so it cannot actually perform any translation.</i>`,
+					demo: "https://ezsign.slim.ovh/",
+					source: "https://github.com/SlimShadyIAm/ezsign",
+					preview: this.importAll(
+						require.context(
+							"@/assets/img/works/ezsign",
+							false,
+							/\.(png|jpe?g|svg)$/
+						)
+					)
+				},
+				{
+					id: uuid.v4(),
 					name: "Material Admin",
-					type: "Website",
+					type: "Website template (static HTML)",
 					description: `This is a simple template for an administrative panel that is based on the <a href="http://materializecss.com">materializecss.com</a> framework to give the site a beautiful look, adhering to the principles of Google&#39;s Material design language. This template is currently in use as the moderator control panel at <a href="https://opdessertstorm.com">opdessertstorm.com</a>, a game with over <strong>32,000 accounts</strong>.`,
 					demo: "https://projects.aamirfarooq.dev/material-admin/",
 					source: "https://github.com/SlimShadyIAm/material-admin/",
