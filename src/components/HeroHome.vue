@@ -156,6 +156,7 @@ p.intro-text {
 	background-clip: text;
 	color: transparent !important;
 	display: inline-block;
+	line-height: 1.2em;
 }
 
 p.intro-text-small {

@@ -11,6 +11,15 @@
 				</a>
 			</div>
 			<div class="column contact-icon">
+				<a href="https://twitter.com/slimshadydev">
+					<div class="box">
+						<span class="icon is-large has-text-white">
+							<font-awesome-icon class="fa-2x" :icon="['fab', 'twitter']" />
+						</span>
+					</div>
+				</a>
+			</div>
+			<div class="column contact-icon">
 				<a href="https://www.linkedin.com/in/farooqaamir">
 					<div class="box">
 						<span class="icon is-large has-text-white">
@@ -24,15 +33,6 @@
 					<div class="box">
 						<span class="icon is-large has-text-white">
 							<font-awesome-icon class="fa-2x" :icon="['fas', 'envelope']" />
-						</span>
-					</div>
-				</a>
-			</div>
-			<div class="column contact-icon">
-				<a href="https://twitter.com/slimshadydev">
-					<div class="box">
-						<span class="icon is-large has-text-white">
-							<font-awesome-icon class="fa-2x" :icon="['fab', 'twitter']" />
 						</span>
 					</div>
 				</a>
