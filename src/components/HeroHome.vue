@@ -9,21 +9,17 @@
 				<div class="intro-inner">
 					<div class="intro-inner-left">
 						<div v-lazy-container="{ selector: 'img' }">
-							<img
-								class="responsive-img circle profile-pic"
-								v-bind:data-src="pfp"
-								alt=""
-								srcset=""
-							/>
+							<img class="responsive-img circle profile-pic" v-bind:data-src="pfp" alt srcset />
 						</div>
 					</div>
 					<div class="intro-inner-right">
 						<p class="intro-text">
-							<span class="mask">AAMIR<br />FAROOQ</span>
+							<span class="mask">
+								AAMIR
+								<br />FAROOQ
+							</span>
 						</p>
-						<p class="intro-text-small">
-							Designer. Developer. Dreamer.
-						</p>
+						<p class="intro-text-small">Designer. Developer. Dreamer.</p>
 						<Contact />
 					</div>
 				</div>
@@ -58,7 +54,7 @@ export default {
 	},
 	data() {
 		return {
-			pfp: require("@/assets/img/pfp.jpg")
+			pfp: require("@/assets/img/pfp.jpeg")
 		};
 	}
 };
