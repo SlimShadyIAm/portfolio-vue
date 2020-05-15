@@ -28,6 +28,15 @@
 					</div>
 				</a>
 			</div>
+			<div class="column contact-icon">
+				<a href="https://twitter.com/slimshadydev">
+					<div class="box">
+						<span class="icon is-large has-text-white">
+							<font-awesome-icon class="fa-2x" :icon="['fab', 'twitter']" />
+						</span>
+					</div>
+				</a>
+			</div>
 		</div>
 		<div class="columns">
 			<div class="column">
@@ -40,10 +49,14 @@
 <script>
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+	faGithub,
+	faTwitter,
+	faLinkedin
+} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-library.add(faGithub, faLinkedin, faEnvelope);
+library.add(faGithub, faLinkedin, faEnvelope, faTwitter);
 
 export default {
 	components: {
@@ -85,5 +98,18 @@ export default {
 
 .columns {
 	margin-top: 5px;
+}
+.column {
+	padding: 0.3rem;
+}
+.columns {
+	margin-top: 7px;
+	margin-bottom: 7px;
+}
+
+@media (max-width: 768px) {
+	.column {
+		padding: 0.5rem;
+	}
 }
 </style>
