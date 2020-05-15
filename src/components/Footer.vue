@@ -3,8 +3,8 @@
 		<div class="content has-text-centered">
 			<p>
 				Created by
-				<a href="https://github.com/SlimShadyIAm.com">Aamir Farooq</a>
-				&copy; 2019.
+				<a href="https://github.com/SlimShadyIAm">Aamir Farooq</a>
+				&copy; 2020.
 			</p>
 		</div>
 	</footer>
