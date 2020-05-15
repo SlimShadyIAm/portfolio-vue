@@ -2,13 +2,6 @@
 	<nav class="navbar">
 		<div class="container">
 			<div class="navbar-brand">
-				<router-link class="navbar-item" to="/">
-					<span :class="{ 'has-text-white': $route.name == 'home' }"
-						>FAROOQ .</span
-					>
-					<span class="x">X</span><span class="y">Y</span
-					><span class="z">Z</span>
-				</router-link>
 				<span
 					class="navbar-burger burger"
 					@click="toggleNav"
@@ -20,28 +13,20 @@
 					<span></span>
 				</span>
 			</div>
-			<div
-				id="navbarMenuHeroA"
-				class="navbar-menu"
-				:class="{ 'is-active': navOpen }"
-			>
+			<div id="navbarMenuHeroA" class="navbar-menu" :class="{ 'is-active': navOpen }">
 				<div class="navbar-end">
 					<router-link
 						class="navbar-item"
 						:class="{ 'has-text-white': $route.name == 'home' }"
 						to="/"
 						exact-active-class="is-active"
-					>
-						Home
-					</router-link>
+					>Home</router-link>
 					<router-link
 						class="navbar-item"
 						:class="{ 'has-text-white': $route.name == 'home' }"
 						to="/work"
 						exact-active-class="is-active"
-					>
-						Past Work
-					</router-link>
+					>Past Work</router-link>
 				</div>
 			</div>
 		</div>
