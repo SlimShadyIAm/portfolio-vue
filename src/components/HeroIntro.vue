@@ -20,3 +20,9 @@ export default {
 };
 </script>
 
+<style scoped>
+	.hero {
+		padding-bottom: 150px;
+	}
+</style>
+

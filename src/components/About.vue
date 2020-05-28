@@ -6,20 +6,22 @@
 			kind="is-info"
 		/>
 		<section class="section">
-			<Tiles />
+			<AboutColumns />
 		</section>
 	</div>
 </template>
 
 <script>
 import HeroIntro from "@/components/HeroIntro";
-import Tiles from "@/components/Tiles";
+import AboutColumns from "@/components/AboutColumns";
+// import Tiles from "@/components/Tiles";
 
 export default {
 	name: "about",
 	components: {
 		HeroIntro,
-		Tiles
+		AboutColumns
+		// Tiles
 	}
 };
 </script>
