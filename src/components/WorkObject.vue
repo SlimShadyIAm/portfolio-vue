@@ -86,6 +86,9 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
 @media (max-width: 768px) {
 	.btn-column {
 		padding: 5px;
@@ -142,6 +145,26 @@ img[lazy="loaded"] {
 
 .work-description {
 	flex-grow: 1;
+	        font-size: 16px;
+        margin: 4px 0;
+        font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.message-header {
+	font-size: 14px;
+	color: #222;
+	font-family: 'Roboto Mono', monospace;
+	text-transform: uppercase;
+}
+
+.message-body {
+	background-color: #fff;
+}
+
+.message {
+	box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
+	border: 1px solid #E6ECF8;
 }
 
 </style>
