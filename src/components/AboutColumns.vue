@@ -51,7 +51,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     .yee {
         margin-top: -275px;
     }

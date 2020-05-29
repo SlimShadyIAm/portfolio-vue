@@ -18,38 +18,27 @@
 							</figure>
 						</div>
 					</div>
-					<div class="columns is-full-on-mobile">
-						<div class="column btn-column">
-							<a
-								class="button is-fullwidth is-link"
-								v-on:click="$emit('images', 0, images)"
-								>Expand preview</a
-							>
-						</div>
-						<div class="column btn-column">
-							<a
-								:href="work.demo"
-								class="button is-fullwidth is-link"
-								:disabled="work.demo === ''"
-								>Visit demo</a
-							>
-						</div>
-						<div class="column btn-column">
-							<a
-								:href="work.source"
-								class="button is-fullwidth is-link"
-								:disabled="work.source === ''"
-							>
-								<font-awesome-icon
-									class="fa"
-									:icon="['fab', 'github']"
-								/>
-							</a>
-						</div>
-					</div>
 				</div>
-				<div class="column is-two-thirds">
-					<p class="is-size-5" v-html="work.description"></p>
+				<div class="column is-two-thirds work-body">
+					<p class="is-size-5 work-description" v-html="work.description"></p>
+					<div class="buttons">
+						<a class="button is-fullwidth is-link" v-on:click="$emit('images', 0, images)">
+							<font-awesome-icon
+								class="fa"
+								:icon="['fas', 'image']"
+							/> Expand preview</a>
+						<a :href="work.demo" class="button is-fullwidth is-link" :disabled="work.demo === ''">
+							<font-awesome-icon
+								class="fa"
+								:icon="['fas', 'search']"
+							/> Visit demo</a>
+						<a :href="work.source" class="button is-fullwidth is-link" :disabled="work.source === ''">
+							<font-awesome-icon
+								class="fa"
+								:icon="['fab', 'github']"
+							/>View GitHub
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -59,6 +48,8 @@
 <script>
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faImage } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 import LazyLoad from "vue-lazyload";
@@ -76,7 +67,7 @@ Vue.use(LazyLoad, {
 	}
 });
 
-library.add(faGithub);
+library.add(faGithub, faSearch, faImage);
 
 export default {
 	name: "WorkObject",
@@ -124,4 +115,33 @@ img[lazy="loaded"] {
 	justify-content: center;
 	flex-direction: column;
 }
+
+.fa {
+	margin-right: 10px;
+}
+
+.buttons {
+	margin-top: 20px;
+}
+
+.button {
+	width: 31%;
+	margin-left: 5px;
+	margin-right: 5px;}
+
+@media (max-width: 768px) {
+	.button {
+		width: 100%;
+	}
+}
+
+.work-body {
+	display: flex;
+	flex-direction: column;
+}
+
+.work-description {
+	flex-grow: 1;
+}
+
 </style>

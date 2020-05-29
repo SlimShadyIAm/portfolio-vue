@@ -34,7 +34,7 @@ export default {
 					id: uuid.v4(),
 					name: "Runner Assist Dashboard",
 					type: "Web App (ReactJS)",
-					description: `This project was tasked to us by the University of Twente as a final project for the first year of the computer science course. We were working alongside TRIMM, the client, who had developed sensors for runners to wear which would track their running performance on things like liftoff distance, lower leg impact, push-off force, and several other metrics.<br>Our task was to make sense of the large amounts of data we were given, analyse it and display it in a web dashboard such that a potential customer could view their running performance, see what they need to improve and what they are doing well. The ultimate goal was to generate useful feedback on how runners could improve.<br>We created the frontend, the backend and API (a Java project in a separate private repository), as well as the database structure. Sample data to populate the database was provided to us.<br><i>Unfortunately a demo is unavailable as the database we used was hosted on university servers, which have since been wiped for the next years' projects</i>`,
+					description: `This project was tasked to us as a final project for the Data & Information course. This site is a dashboard to display data collected from running sensors they developed by a local company. We created the frontend in React, and API and backend in Jeresy and Java servlets.</i>`,
 					demo: "",
 					source:
 						"https://github.com/SlimShadyIAm/runner-assist-frontend/",
@@ -50,7 +50,7 @@ export default {
 					id: uuid.v4(),
 					name: "AussieJump",
 					type: "Game (Electron)",
-					description: `This was a game written as a final group project for the 5th module at the Unviersity of Twente.<br>Aussie jump is a sidescroller game inspired by Flappy Bird and Google's T-Rex game on Chrome. It features an Australian theme, as the character you control is a kangaroo and you avoid cactuses which come at you from two sides at varying speeds. Use your arrow keys, or tilt the sensor to avoid the obstacles and get the highest score you can. Boing! Boing! Boing!<br />The game is written in Electron v6.1.2 and makes use of the <code>onoff</code> NPM package to support communication over GPIO with an FPGA, which is connected to an accelerometer. This gives the user the choice to control the game with a keyboard or motion controls.<br><i>A demo video is available <a href="https://youtu.be/Kcm_Yac7x3U">here</a>, and you can play yourself if you clone the repository and run it yourself, however it will run super fast as it was designed to be run on a Raspberry Pi which is much slower. You can't use motion controls without our hardware setup (FPGA+accelerometer)</i>`,
+					description: `This was a game written as a final group project for my Computer Systems course. We used Electron to make the game and an FPGA+accelerometer to add motion controls.<br>Aussie jump is a sidescroller game inspired by Flappy Bird and Google's T-Rex game on Chrome, featuring an Australian theme. Jump to avoid the obstacles. Click the link to watch our demo video!`,
 					demo: "https://youtu.be/Kcm_Yac7x3U",
 					source: "https://github.com/SlimShadyIAm/AussieJump",
 					preview: this.importAll(
@@ -80,8 +80,8 @@ export default {
 					id: uuid.v4(),
 					name: "EZ-Sign",
 					type: "Web App (VueJS)",
-					description: `This web app was created as a high fidelity proof of concept, as a final project for the human-computer interaction course at the University of Twente.<br><br>Every day, sign language users, including deaf people, and the hearing or speech impaired, struggle with interactions considered trivial to those who can communicate with others verbally. For this marginalized group of our society, we have developed an app that aims to ease some of this difficulty by providing them with a smart sign language translation assistant. While previously sign language users would typically resort to using a pen and piece of paper, gesturing, or typing in the notes app on a smartphone, our application aims to replace these older methods in lieu of a professional sign language interpreter.<br><i></i>This app is a proof-of-concept prototype, so it cannot actually perform any translation.</i>`,
-					demo: "https://ezsign.slim.ovh/",
+					description: `This web app was created as a high fidelity proof of concept, as a final project for my human-computer interaction course. This is a non-functional prototype.<br>The concept was designed to help sign language users interact with non-sign language users in their daily lives by building a smart sign language translation app by using the camera on your phone.`,
+					demo: "https://ezsign.slim.rocks/",
 					source: "https://github.com/SlimShadyIAm/ezsign",
 					preview: this.importAll(
 						require.context(
@@ -131,55 +131,6 @@ export default {
 					preview: this.importAll(
 						require.context(
 							"@/assets/img/works/fromun",
-							false,
-							/\.(png|jpe?g|svg)$/
-						)
-					)
-				},
-				{
-					id: uuid.v4(),
-					name: "Taggy McTagface",
-					type: "Discord bot (NodeJS)",
-					description:
-						"This bot was created for the <a href='https://discord.gg/chromeos'>r/ChromeOS Discord server</a>.<br>It provides various utilities useful for regular members, such as the ability to add custom text snippets to the database so that when you invoke a command, it will post that snippet. This is very useful, for example in the context of support, when you want to post a series of common Linux commands; you wouldn't have to type them out by hand, rather just type something like <code>$ubuntu</code> and the bot would post the pre-saved response.<br>Another key feature is that it makes use of a <a href='https://cros-updates.netlify.com/'>ChromeOS update release API</a>, so you can check which version and platform number a device model is on; useful for seeing how device updates are rolled out to all models.",
-					demo: "https://discord.gg/chromeos",
-					source: "https://github.com/SlimShadyIAm/taggymctagface",
-					preview: this.importAll(
-						require.context(
-							"@/assets/img/works/taggymctagface",
-							false,
-							/\.(png|jpe?g|svg)$/
-						)
-					)
-				},
-				{
-					id: uuid.v4(),
-					name: "Toadette",
-					type: "Discord bot (NodeJS)",
-					description:
-						"Did you know that Mario Kart has a competitive scene? I know, I'm as surprised as you are.<br>I made this bot for a friend's Mario Kart 8 team Discord as he wanted a simple way for his team to communicate to each other when there was a scrimmage match available for the team to compete in, and for the team members to mark themselves as available. You can use the command <code>!start</code> to notify the server that a war is starting, and teammates can join the lineup by typing <code>!can</code>. It's that easy.",
-					demo: "",
-					source: "https://github.com/SlimShadyIAm/toadette",
-					preview: this.importAll(
-						require.context(
-							"@/assets/img/works/toadette",
-							false,
-							/\.(png|jpe?g|svg)$/
-						)
-					)
-				},
-
-				{
-					id: uuid.v4(),
-					name: "ChromeOS Updates Bot",
-					type: "Discord bot (NodeJS)",
-					description:
-						"This bot was created for the <a href='https://discord.gg/chromeos'>r/ChromeOS Discord server</a>.<br>It posts a notification in the server when a new update is released for ChromeOS, the operating system that runs on Chromebooks",
-					demo: "https://discord.gg/chromeos",
-					source: "https://github.com/SlimShadyIAm/cros-updates",
-					preview: this.importAll(
-						require.context(
-							"@/assets/img/works/cros-updates",
 							false,
 							/\.(png|jpe?g|svg)$/
 						)
