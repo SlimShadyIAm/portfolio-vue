@@ -1,7 +1,14 @@
 <template>
-	<section class="hero" :class="kind">
+	<section class="hero hero-intro" :class="kind">
 		<div class="hero-body">
-			
+			<div class="container">
+				<h1 class="title">
+					{{ title }}
+				</h1>
+				<h2 class="subtitle">
+					{{ subtitle }}
+				</h2>
+			</div>
 		</div>
 	</section>
 </template>
@@ -12,10 +19,3 @@ export default {
 	props: ["title", "subtitle", "kind"]
 };
 </script>
-
-<style scoped>
-	.hero {
-		padding-bottom: 200px;
-	}
-</style>
-

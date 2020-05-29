@@ -1,9 +1,7 @@
 <template>
 	<div id="about">
 		<HeroIntro
-			title="About me"
-			subtitle="Learn a little about who I am"
-			kind="is-info"
+			kind="is-info" style="padding-bottom: 200px;"
 		/>
 		<section class="section">
 			<AboutColumns />
