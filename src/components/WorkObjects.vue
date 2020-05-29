@@ -33,7 +33,7 @@ export default {
 				{
 					id: uuid.v4(),
 					name: "Runner Assist Dashboard",
-					type: "Web App (ReactJS)",
+					type: "React",
 					description: `This project was tasked to us as a final project for the Data & Information course. This site is a dashboard to display data collected from running sensors they developed by a local company. We created the frontend in React, and API and backend in Jeresy and Java servlets.</i>`,
 					demo: "",
 					source:
@@ -47,6 +47,36 @@ export default {
 					)
 				},
 				{
+					id: uuid.v4(),
+					name: "TalkBoard",
+					type: "Gridsome ~ VueJS",
+					description: `A website I created for the host of the TalkBoard podcast, Aaron, a prominent member of the iOS jailbreak community. The podcast invites the most talented developers, from the jailbreaking scene and the general tech industry, for a candid conversation about their passion for their work.`,
+					demo: "https://talkboard.live/",
+					source: "https://github.com/SlimShadyIAm/talkboard-gridsome",
+					preview: this.importAll(
+						require.context(
+							"@/assets/img/works/talkboard",
+							false,
+							/\.(png|jpe?g|svg)$/
+						)
+					)
+				},
+				{
+					id: uuid.v4(),
+					name: "EZ-Sign",
+					type: "VueJS",
+					description: `This web app was created as a high fidelity proof of concept, as a final project for my human-computer interaction course. This is a non-functional prototype.<br>The concept was designed to help sign language users interact with non-sign language users in their daily lives by building a smart sign language translation app by using the camera on your phone.`,
+					demo: "https://ezsign.slim.rocks/",
+					source: "https://github.com/SlimShadyIAm/ezsign",
+					preview: this.importAll(
+						require.context(
+							"@/assets/img/works/ezsign",
+							false,
+							/\.(png|jpe?g|svg)$/
+						)
+					)
+				},
+								{
 					id: uuid.v4(),
 					name: "AussieJump",
 					type: "Game (Electron)",
@@ -63,38 +93,8 @@ export default {
 				},
 				{
 					id: uuid.v4(),
-					name: "TalkBoard",
-					type: "Website (VueJS)",
-					description: `A website I created for the host of the TalkBoard podcast, Aaron, a prominent member of the iOS jailbreak community. The podcast invites the most talented developers, from the jailbreaking scene and the general tech industry, for a candid conversation about their passion for their work.`,
-					demo: "https://talkboard.live/",
-					source: "https://github.com/SlimShadyIAm/talkboard",
-					preview: this.importAll(
-						require.context(
-							"@/assets/img/works/talkboard",
-							false,
-							/\.(png|jpe?g|svg)$/
-						)
-					)
-				},
-				{
-					id: uuid.v4(),
-					name: "EZ-Sign",
-					type: "Web App (VueJS)",
-					description: `This web app was created as a high fidelity proof of concept, as a final project for my human-computer interaction course. This is a non-functional prototype.<br>The concept was designed to help sign language users interact with non-sign language users in their daily lives by building a smart sign language translation app by using the camera on your phone.`,
-					demo: "https://ezsign.slim.rocks/",
-					source: "https://github.com/SlimShadyIAm/ezsign",
-					preview: this.importAll(
-						require.context(
-							"@/assets/img/works/ezsign",
-							false,
-							/\.(png|jpe?g|svg)$/
-						)
-					)
-				},
-				{
-					id: uuid.v4(),
 					name: "Material Admin",
-					type: "Website template (static HTML)",
+					type: "HTML Template",
 					description: `This is a simple template for an administrative panel that is based on the <a href="http://materializecss.com">materializecss.com</a> framework to give the site a beautiful look, adhering to the principles of Google&#39;s Material design language. This template is currently in use as the moderator control panel at <a href="https://opdessertstorm.com">opdessertstorm.com</a>, a game with over <strong>32,000 accounts</strong>.`,
 					demo: "https://projects.aamirfarooq.dev/material-admin/",
 					source: "https://github.com/SlimShadyIAm/material-admin/",
@@ -109,7 +109,7 @@ export default {
 				{
 					id: uuid.v4(),
 					name: "Zira Dashboard",
-					type: "Website (Static HTML)",
+					type: "HTML template",
 					description: `This template, based off of my <a href="https://github.com/SlimShadyIAm/material-admin">Material Admin</a> template, was created as a static HTML mockup for an administrative dashboard for <a href="https://zira.ovh">Zira</a>, a Discord bot with almost <b>10 million users</b> and is in use in 57,000 guilds. The dashboard serves as a graphical way to control the bot&#39;s configuration.`,
 					demo: "https://projects.aamirfarooq.dev/zira/",
 					source: "https://github.com/SlimShadyIAm/zira-dashboard/",
@@ -124,7 +124,7 @@ export default {
 				{
 					id: uuid.v4(),
 					name: "Froebel's Model UN 2016",
-					type: "Website (Static HTML)",
+					type: "HTML",
 					description: `This website was created to be used as the official site for the Model UN of Froebel's International School, the high school I attended. Here, students were able to find information regarding the host team staff, scheduling as well as how to register to participate. The final version, tweaked by Rockville, can be found at <a href="https://froebels.edu.pk/fromun">froebels.edu.pk/fromun.</a>, though it has since been modified by students to reflect information from newer years.`,
 					demo: "https://projects.aamirfarooq.dev/fromun-site",
 					source: "https://github.com/SlimShadyIAm/fromun-site",
@@ -139,7 +139,7 @@ export default {
 				{
 					id: uuid.v4(),
 					name: "This website!",
-					type: "Website (VueJS)",
+					type: "VueJS",
 					description: `This website was written by me, using the frontend JavaScript framework <a href='https://vuejs.org'>Vue.js</a>, and <a href="https://bulma.io">Bulma</a> as the CSS framework.`,
 					demo: "https://aamirfarooq.dev",
 					source: "https://github.com/SlimShadyIAm/portfolio-vue/",

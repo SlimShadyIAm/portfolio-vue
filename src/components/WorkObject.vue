@@ -2,7 +2,7 @@
 	<article class="message is-link">
 		<div class="message-header">
 			<p>
-				{{ work.name }} - <span class="is-italic">{{ work.type }}</span>
+				{{ work.name }} - {{ work.type }}
 			</p>
 		</div>
 		<div class="message-body">
