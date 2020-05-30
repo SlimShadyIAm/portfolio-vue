@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import AboutColumn from "@/components/AboutColumn";
+import AboutColumn from "@/components/home/AboutColumn";
 
 export default {
     name: "About Columns",

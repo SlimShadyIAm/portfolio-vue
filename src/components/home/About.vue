@@ -10,16 +10,14 @@
 </template>
 
 <script>
-import HeroIntro from "@/components/HeroIntro";
-import AboutColumns from "@/components/AboutColumns";
-// import Tiles from "@/components/Tiles";
+import HeroIntro from "@/components/layout/HeroIntro";
+import AboutColumns from "@/components/home/AboutColumns";
 
 export default {
 	name: "about",
 	components: {
 		HeroIntro,
 		AboutColumns
-		// Tiles
 	}
 };
 </script>

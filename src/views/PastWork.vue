@@ -13,9 +13,9 @@
 </template>
 
 <script>
-import HeroIntro from "@/components/HeroIntro";
-import WorkObjects from "@/components/WorkObjects";
-import Footer from "@/components/Footer";
+import HeroIntro from "@/components/layout/HeroIntro";
+import WorkObjects from "@/components/previouswork/WorkObjects";
+import Footer from "@/components/layout/Footer";
 
 export default {
 	name: "PastWork",

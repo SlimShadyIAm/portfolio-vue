@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import WorkObject from "@/components/WorkObject";
+import WorkObject from "@/components/previouswork/WorkObject";
 import uuid from "uuid";
 import VueGallery from "vue-gallery";
 

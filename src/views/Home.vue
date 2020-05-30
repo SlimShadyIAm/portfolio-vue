@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import HeroHome from "@/components/HeroHome";
-import About from "@/components/About";
-import Footer from "@/components/Footer";
+import HeroHome from "@/components/home/HeroHome";
+import About from "@/components/home/About";
+import Footer from "@/components/layout/Footer";
 
 export default {
 	name: "home",
