@@ -138,6 +138,8 @@ img[lazy="loaded"] {
 	margin-left: 5px;
 	width: 120px;
 	margin-right: 5px;
+	box-shadow: 0 10px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
+
 }
 
 .work-body {
@@ -150,12 +152,13 @@ img[lazy="loaded"] {
 	font-size: 16px;
     margin: 4px 0;
     font-family: 'Source Sans Pro', sans-serif;
+	color: #222;
 
 }
 
 .message-header {
 	font-size: 14px;
-	color: #222;
+	color: #aaa;
 	font-family: 'Roboto Mono', monospace;
 	text-transform: uppercase;
 }
