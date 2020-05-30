@@ -29,7 +29,7 @@ export default {
                     },
                     {
                         title: "Hobbies and interests",
-                        features: ["PC building enthusiast", "Hackintoshing and jailbreaking", "Linux and FOSS", "Networking and IoT", "Privacy", "Travelling"]
+                        features: ["PC building enthusiast", "Hackintoshing and jailbreaking", "Linux and FOSS", "Networking and IoT", "Privacy and security", "Travelling"]
                     }
                 ]
             },
@@ -41,7 +41,7 @@ export default {
                 featureSets: [
                     {
                         title: "My Tools",
-                        features: ["HTML5 and CSS3", "JavaScript", "NodeJS", "Vue.js", "React", "Gridsome", "Gatsby", "Jekyll", "Java", "Python", "Linux and server administration"]
+                        features: ["HTML5 and CSS3", "JavaScript", "NodeJS", "Figma", "Vue.js", "React", "Gridsome", "Gatsby", "Jekyll", "Java", "Python", "Linux and server administration"]
             
                     }
                 ]
