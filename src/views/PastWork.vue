@@ -6,7 +6,13 @@
 			kind="is-info"
 		/>
 		<div class="container">
-			<WorkObjects />
+			<section class="section">
+				<h2 class="title">Contributions</h2>
+				<Contributions />
+				<br>
+				<h2 class="title">Projects</h2>
+				<WorkObjects />
+			</section>
 		</div>
 		<Footer />
 	</div>
@@ -15,6 +21,7 @@
 <script>
 import HeroIntro from "@/components/layout/HeroIntro";
 import WorkObjects from "@/components/previouswork/WorkObjects";
+import Contributions from "@/components/previouswork/Contributions";
 import Footer from "@/components/layout/Footer";
 
 export default {
@@ -22,6 +29,7 @@ export default {
 	components: {
 		HeroIntro,
 		WorkObjects,
+		Contributions,
 		Footer
 	}
 };

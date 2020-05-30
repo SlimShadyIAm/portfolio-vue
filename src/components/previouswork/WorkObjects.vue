@@ -1,17 +1,17 @@
 <template>
-	<section class="section">
-		<WorkObject
-			v-for="work in workData"
-			:key="work.id"
-			:work="work"
-			v-on:images="setIndex"
-		/>
-		<VueGallery
-			:images="images"
-			:index="index"
-			@close="index = null"
-		></VueGallery>
-	</section>
+		<div>
+			<WorkObject
+				v-for="work in workData"
+				:key="work.id"
+				:work="work"
+				v-on:images="setIndex"
+			/>
+			<VueGallery
+				:images="images"
+				:index="index"
+				@close="index = null"
+			></VueGallery>
+		</div>
 </template>
 
 <script>

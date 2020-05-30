@@ -138,8 +138,6 @@ img[lazy="loaded"] {
 	margin-left: 5px;
 	width: 120px;
 	margin-right: 5px;
-	box-shadow: 0 10px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
-
 }
 
 .work-body {
