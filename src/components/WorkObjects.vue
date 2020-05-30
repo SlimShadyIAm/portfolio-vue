@@ -48,6 +48,21 @@ export default {
 				},
 				{
 					id: uuid.v4(),
+					name: "EZ-Sign",
+					type: "VueJS",
+					description: `This web app was created as a high fidelity proof of concept, as a final project for my human-computer interaction course. This is a non-functional prototype.<br>The concept was designed to help sign language users interact with non-sign language users in their daily lives by building a smart sign language translation app by using the camera on your phone.`,
+					demo: "https://ezsign.slim.rocks/",
+					source: "https://github.com/SlimShadyIAm/ezsign",
+					preview: this.importAll(
+						require.context(
+							"@/assets/img/works/ezsign",
+							false,
+							/\.(png|jpe?g|svg)$/
+						)
+					)
+				},
+				{
+					id: uuid.v4(),
 					name: "TalkBoard",
 					type: "Gridsome ~ VueJS",
 					description: `A website I created for the host of the TalkBoard podcast, Aaron, a prominent member of the iOS jailbreak community. The podcast invites the most talented developers, from the jailbreaking scene and the general tech industry, for a candid conversation about their passion for their work.`,
@@ -62,21 +77,6 @@ export default {
 					)
 				},
 				{
-					id: uuid.v4(),
-					name: "EZ-Sign",
-					type: "VueJS",
-					description: `This web app was created as a high fidelity proof of concept, as a final project for my human-computer interaction course. This is a non-functional prototype.<br>The concept was designed to help sign language users interact with non-sign language users in their daily lives by building a smart sign language translation app by using the camera on your phone.`,
-					demo: "https://ezsign.slim.rocks/",
-					source: "https://github.com/SlimShadyIAm/ezsign",
-					preview: this.importAll(
-						require.context(
-							"@/assets/img/works/ezsign",
-							false,
-							/\.(png|jpe?g|svg)$/
-						)
-					)
-				},
-								{
 					id: uuid.v4(),
 					name: "AussieJump",
 					type: "Game (Electron)",

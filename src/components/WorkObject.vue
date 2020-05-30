@@ -7,9 +7,9 @@
 		</div>
 		<div class="message-body">
 			<div class="columns is-full-on-mobile">
-				<div class="column is-one-third preview-left">
+				<div class="column is-5 preview-left">
 					<div class="columns">
-						<div class="column">
+						<div class="column" >
 							<figure
 								class="image"
 								v-lazy-container="{ selector: 'img' }"
@@ -19,24 +19,28 @@
 						</div>
 					</div>
 				</div>
-				<div class="column is-two-thirds work-body">
+				<div class="column work-body">
 					<p class="is-size-5 work-description" v-html="work.description"></p>
+				</div>
+			</div>
+			<div class="columns">
+				<div class="column">
 					<div class="buttons">
-						<a class="button is-fullwidth is-link" v-on:click="$emit('images', 0, images)">
+						<a class="button is-link" v-on:click="$emit('images', 0, images)">
 							<font-awesome-icon
 								class="fa"
 								:icon="['fas', 'image']"
-							/> Expand preview</a>
-						<a :href="work.demo" class="button is-fullwidth is-link" :disabled="work.demo === ''">
+							/> Gallery</a>
+						<a :href="work.demo" class="button is-link" :disabled="work.demo === ''">
 							<font-awesome-icon
 								class="fa"
 								:icon="['fas', 'search']"
-							/> Visit demo</a>
-						<a :href="work.source" class="button is-fullwidth is-link" :disabled="work.source === ''">
+							/> Demo</a>
+						<a :href="work.source" class="button is-link" :disabled="work.source === ''">
 							<font-awesome-icon
 								class="fa"
 								:icon="['fab', 'github']"
-							/>View GitHub
+							/>GitHub
 						</a>
 					</div>
 				</div>
@@ -124,18 +128,16 @@ img[lazy="loaded"] {
 }
 
 .buttons {
-	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 .button {
-	width: 31%;
 	margin-left: 5px;
-	margin-right: 5px;}
-
-@media (max-width: 768px) {
-	.button {
-		width: 100%;
-	}
+	width: 120px;
+	margin-right: 5px;
 }
 
 .work-body {
@@ -145,9 +147,9 @@ img[lazy="loaded"] {
 
 .work-description {
 	flex-grow: 1;
-	        font-size: 16px;
-        margin: 4px 0;
-        font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+    margin: 4px 0;
+    font-family: 'Source Sans Pro', sans-serif;
 
 }
 
@@ -166,5 +168,19 @@ img[lazy="loaded"] {
 	box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
 	border: 1px solid #E6ECF8;
 }
+
+
+@media (max-width: 768px) {
+	.button {
+		width: 70%;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+	.buttons {
+		margin-top: 0;
+		margin-bottom: 10px;
+	}
+}
+
 
 </style>
