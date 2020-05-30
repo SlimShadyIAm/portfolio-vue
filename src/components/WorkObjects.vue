@@ -63,6 +63,21 @@ export default {
 				},
 				{
 					id: uuid.v4(),
+					name: "ApexTweaks",
+					type: "Jekyll",
+					description: `A portfolio/showcase for a developer group that creates popular jailbreak tweaks.`,
+					demo: "https://apextweaks.com/",
+					// source: "https://github.com/SlimShadyIAm/talkboard-gridsome",
+					preview: this.importAll(
+						require.context(
+							"@/assets/img/works/apex",
+							false,
+							/\.(png|jpe?g|svg)$/
+						)
+					)
+				},
+				{
+					id: uuid.v4(),
 					name: "TalkBoard",
 					type: "Gridsome ~ VueJS",
 					description: `A website I created for the host of the TalkBoard podcast, Aaron, a prominent member of the iOS jailbreak community. The podcast invites the most talented developers, from the jailbreaking scene and the general tech industry, for a candid conversation about their passion for their work.`,
