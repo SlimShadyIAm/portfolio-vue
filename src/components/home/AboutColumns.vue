@@ -53,7 +53,7 @@ export default {
 
 <style scoped>
     .yee {
-        margin-top: -275px;
+        margin-top: -300px;
     }
     .yee:first-child .column:first-child .about-column {
         border-left: 1px solid #E6ECF8;

@@ -1,7 +1,7 @@
 <template>
 	<div id="about">
 		<HeroIntro
-			kind="is-info" style="padding-bottom: 200px;"
+			kind="is-info" style="padding-bottom: 190px;"
 		/>
 		<section class="section">
 			<AboutColumns />
