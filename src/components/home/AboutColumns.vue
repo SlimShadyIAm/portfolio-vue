@@ -21,7 +21,7 @@ export default {
                 title: "Who I Am",
                 icon: "user",
                 iconType: "far",
-                subtitle: "Lorem ipsum dolor sit amet, at nam civibus perpetua. Usu enim nominati torquatos cu.",
+                subtitle: "I'm an enthusiastic and passionate worker. I love building meaningful relationships when working with people.",
                 featureSets: [
                     {
                         title: "About me",
@@ -29,7 +29,7 @@ export default {
                     },
                     {
                         title: "Hobbies and interests",
-                        features: ["PC building enthusiast", "Hackintoshing and jailbreaking", "Linux and FOSS", "Networking and IoT", "Privacy and security", "Travelling"]
+                        features: ["PC building enthusiast", "Hackintoshing and jailbreaking", "Online community management", "Privacy and security", "Podcasts and reading", "Travelling", "Cooking"]
                     }
                 ]
             },
