@@ -31,12 +31,12 @@
 								class="fa"
 								:icon="['fas', 'image']"
 							/> Gallery</a>
-						<a :href="work.demo" class="button is-link" :disabled="work.demo === ''">
+						<a :href="work.demo" class="button is-link" :disabled="!work.demo">
 							<font-awesome-icon
 								class="fa"
 								:icon="['fas', 'search']"
 							/> Demo</a>
-						<a :href="work.source" class="button is-link" :disabled="work.source === ''">
+						<a :href="work.source" class="button is-link" :disabled="!work.source">
 							<font-awesome-icon
 								class="fa"
 								:icon="['fab', 'github']"
