@@ -168,6 +168,7 @@ img[lazy="loaded"] {
 .message {
 	box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
 	border: 1px solid #E6ECF8;
+	border-radius: 5px;
 }
 
 

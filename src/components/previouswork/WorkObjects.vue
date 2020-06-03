@@ -7,7 +7,7 @@
 				v-on:images="setIndex"
 			/>
 			<VueGallery
-				:images="images"
+				:images="images.slice(1, images.length)"
 				:index="index"
 				@close="index = null"
 			></VueGallery>

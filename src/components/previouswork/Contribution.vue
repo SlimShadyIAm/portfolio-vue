@@ -1,5 +1,5 @@
 <template>
-    <div class="column is-6">
+    <div class="column is-6-desktop is-12-tablet">
         <div class="project">
           <img class="project-image" :src="contribution.image">
           <div class="project-body">
@@ -88,12 +88,13 @@ export default {
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 480px) {
     .project {
         flex-direction: column;
     }
     .project-image {
         width: 100%;
+        max-height: none;
         border-top-right-radius: 15px;
         border-bottom-left-radius: 0px;
     }

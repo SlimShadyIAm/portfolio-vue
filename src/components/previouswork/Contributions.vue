@@ -1,7 +1,7 @@
 <template>
     <section class="section" style="padding: 0;">
         <div class="container">
-            <div class="columns">
+            <div class="columns columns-contributions">
                 <Contribution v-for="contribution in contributions" :key="contribution.id" :contribution="contribution" />
             </div>
         </div>
@@ -47,5 +47,9 @@ export default {
 </script>
 
 <style>
-
+    @media screen and (max-width: 1024px), print {
+    .columns-contributions {
+        flex-direction: column;
+    }
+}
 </style>
