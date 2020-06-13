@@ -29,8 +29,8 @@
 </template>
 
 <script>
-import Header from "@/components/Header";
-import Contact from "@/components/Contact";
+import Header from "@/components/layout/Header";
+import Contact from "@/components/home/Contact";
 import LazyLoad from "vue-lazyload";
 import Vue from "vue";
 
@@ -148,7 +148,7 @@ p.intro-text {
 }
 
 .mask {
-	background-image: url("../assets/img/gradient.jpg");
+	background-image: url("../../assets/img/gradient.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center bottom;

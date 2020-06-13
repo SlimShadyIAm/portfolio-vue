@@ -6,23 +6,38 @@
 			kind="is-info"
 		/>
 		<div class="container">
-			<WorkObjects />
+			<section class="section">
+				<h2 class="title">Contributions</h2>
+				<Contributions />
+				<br>
+				<h2 class="title">Projects</h2>
+				<WorkObjects />
+			</section>
 		</div>
 		<Footer />
 	</div>
 </template>
 
 <script>
-import HeroIntro from "@/components/HeroIntro";
-import WorkObjects from "@/components/WorkObjects";
-import Footer from "@/components/Footer";
+import HeroIntro from "@/components/layout/HeroIntro";
+import WorkObjects from "@/components/previouswork/WorkObjects";
+import Contributions from "@/components/previouswork/Contributions";
+import Footer from "@/components/layout/Footer";
 
 export default {
 	name: "PastWork",
 	components: {
 		HeroIntro,
 		WorkObjects,
+		Contributions,
 		Footer
 	}
 };
 </script>
+
+<style scoped>
+@media (max-width: 320px) {
+	.section {
+		padding: 3rem 1rem;
+	}
+}</style>
