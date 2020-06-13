@@ -2,7 +2,7 @@
 	<article class="message is-link">
 		<div class="message-header">
 			<p>
-				{{ work.name }} - {{ work.type }}
+				{{ work.name }}
 			</p>
 		</div>
 		<div class="message-body">
@@ -21,6 +21,9 @@
 				</div>
 				<div class="column work-body">
 					<p class="is-size-5 work-description" v-html="work.description"></p>
+					<p class="tool-badges">
+						<span v-for="tool in work.tools" :key="tool" class="tool-badge">{{tool}}</span>
+					</p>
 				</div>
 			</div>
 			<div class="columns">
@@ -171,6 +174,24 @@ img[lazy="loaded"] {
 	border-radius: 5px;
 }
 
+.tool-badges {
+	line-height: 2em;
+	/* margin-top: 10px; */
+}
+
+.tool-badge {
+	background-color: #3273dc;
+	border-radius: 3px;
+	padding: 4px 8px;
+	color: #fff;
+	margin: 0 3px;
+	display: inline-block;
+	white-space: nowrap;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 12px;
+	text-transform: uppercase;
+	line-height: 1.5em;
+}
 
 @media (max-width: 768px) {
 	.button {
@@ -182,7 +203,16 @@ img[lazy="loaded"] {
 		margin-top: 0;
 		margin-bottom: 10px;
 	}
-}
+	.tool-badges {
+		line-height: 2em;
+		margin-top: 15px;
+	}
 
+	.tool-badge {
+
+		font-size: 13px;
+		/* line-height: 2em; */
+	}
+}
 
 </style>

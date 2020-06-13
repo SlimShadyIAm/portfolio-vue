@@ -34,3 +34,10 @@ export default {
 	}
 };
 </script>
+
+<style scoped>
+@media (max-width: 320px) {
+	.section {
+		padding: 3rem 1rem;
+	}
+}</style>
