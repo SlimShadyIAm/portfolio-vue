@@ -1,17 +1,17 @@
 <template>
-		<div>
-			<WorkObject
-				v-for="work in workData"
-				:key="work.id"
-				:work="work"
-				v-on:images="setIndex"
-			/>
-			<VueGallery
-				:images="images.slice(1, images.length)"
-				:index="index"
-				@close="index = null"
-			></VueGallery>
-		</div>
+	<div>
+		<WorkObject
+			v-for="work in workData"
+			:key="work.id"
+			:work="work"
+			v-on:images="setIndex"
+		/>
+		<VueGallery
+			:images="images.slice(1, images.length)"
+			:index="index"
+			@close="index = null"
+		></VueGallery>
+	</div>
 </template>
 
 <script>
@@ -33,7 +33,13 @@ export default {
 				{
 					id: uuid.v4(),
 					name: "Runner Assist Dashboard",
-					tools: ["React", "Figma", "MaterializeCSS", "Jersey", "Java servlets"],
+					tools: [
+						"React",
+						"Figma",
+						"MaterializeCSS",
+						"Jersey",
+						"Java servlets"
+					],
 					description: `This project was tasked to us as a final project for the Data & Information course. This site is a dashboard to display data collected from running sensors they developed by a local company. We created the frontend in React, and API and backend in Jeresy and Java servlets.</i>`,
 					demo: "",
 					source:
@@ -77,11 +83,43 @@ export default {
 				},
 				{
 					id: uuid.v4(),
+					name: "gm!streaks",
+					tools: ["Python", "discord.py", "MariaDB"],
+					description: `A Snapchat inspired bot for Discord, to send your friends memes and start streaks.\nUsers can send each other "snaps", similar to Snapchat, and each user must send each other one snap within every 24 hour window.\nEach snap adds one point to each user's score, and every day a streak is maintained you get a fire badge.\n\nWatch the demo to learn more!`,
+					demo:
+						"https://twitter.com/slimshadydev/status/1292915536628678657",
+					preview: this.importAll(
+						require.context(
+							"@/assets/img/works/gmstreaks",
+							false,
+							/\.(png|jpe?g|svg)$/
+						)
+					)
+				},
+				{
+					id: uuid.v4(),
+					name: "Releasy McReleaseface",
+					tools: ["Python", "discord.py", "sqlite3", "RSS feeds"],
+					description: `A Discord bot which watches Apple's release feed for new updates to iOS, iPadOS, macOS, watchOS and tvOS.\n\nServer managers have the ability to subscribe to updates from a device and choose a channel for updates to be posted to. Additionally, you can set a role to ping for each OS type, when an update is posted.`,
+					demo: "https://slim.rocks/releasy",
+					source:
+						"https://github.com/SlimShadyIAm/ReleasyMcReleaseface",
+					preview: this.importAll(
+						require.context(
+							"@/assets/img/works/releasy",
+							false,
+							/\.(png|jpe?g|svg)$/
+						)
+					)
+				},
+				{
+					id: uuid.v4(),
 					name: "TalkBoard",
 					tools: ["VueJS", "Gridsome", "Bulma", "Github actions"],
 					description: `A website I created for the host of the TalkBoard podcast, Aaron, a prominent member of the iOS jailbreak community. The podcast invites the most talented developers, from the jailbreaking scene and the general tech industry, for a candid conversation about their passion for their work.`,
 					demo: "https://talkboard.live/",
-					source: "https://github.com/SlimShadyIAm/talkboard-gridsome",
+					source:
+						"https://github.com/SlimShadyIAm/talkboard-gridsome",
 					preview: this.importAll(
 						require.context(
 							"@/assets/img/works/talkboard",
@@ -93,7 +131,12 @@ export default {
 				{
 					id: uuid.v4(),
 					name: "AussieJump",
-					tools: ["Electron", "HTML canvas", "Javascript for game", "raspberry pi system I/O"],
+					tools: [
+						"Electron",
+						"HTML canvas",
+						"Javascript for game",
+						"raspberry pi system I/O"
+					],
 					description: `This was a game written as a final group project for my Computer Systems course. We used Electron to make the game and an FPGA+accelerometer to add motion controls.<br>Aussie jump is a sidescroller game inspired by Flappy Bird and Google's T-Rex game on Chrome, featuring an Australian theme. Jump to avoid the obstacles. Click the link to watch our demo video!`,
 					demo: "https://youtu.be/Kcm_Yac7x3U",
 					source: "https://github.com/SlimShadyIAm/AussieJump",
