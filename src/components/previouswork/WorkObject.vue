@@ -1,20 +1,15 @@
 <template>
 	<article class="message is-link">
 		<div class="message-header">
-			<p>
-				{{ work.name }}
-			</p>
+			<p>{{ work.name }}</p>
 		</div>
 		<div class="message-body">
 			<div class="columns is-full-on-mobile">
 				<div class="column is-5 preview-left">
 					<div class="columns">
-						<div class="column" >
-							<figure
-								class="image"
-								v-lazy-container="{ selector: 'img' }"
-							>
-								<img :data-src="images[0]" alt="" />
+						<div class="column">
+							<figure class="image" v-lazy-container="{ selector: 'img' }">
+								<img :data-src="images[0]" alt />
 							</figure>
 						</div>
 					</div>
@@ -24,26 +19,15 @@
 					<p class="tool-badges">
 						<span v-for="tool in work.tools" :key="tool" class="tool-badge">{{tool}}</span>
 					</p>
-				</div>
-			</div>
-			<div class="columns">
-				<div class="column">
 					<div class="buttons">
-						<a class="button is-link" v-on:click="$emit('images', 0, images)">
-							<font-awesome-icon
-								class="fa"
-								:icon="['fas', 'image']"
-							/> Gallery</a>
-						<a :href="work.demo" class="button is-link" :disabled="!work.demo">
-							<font-awesome-icon
-								class="fa"
-								:icon="['fas', 'search']"
-							/> Demo</a>
-						<a :href="work.source" class="button is-link" :disabled="!work.source">
-							<font-awesome-icon
-								class="fa"
-								:icon="['fab', 'github']"
-							/>GitHub
+						<a class="button is-link" v-on:click="$emit('images', 0, images)" v-if="images.length > 1">
+							<font-awesome-icon class="fa" :icon="['fas', 'image']" />Gallery
+						</a>
+						<a :href="work.demo" class="button is-link" v-if="!work.demo">
+							<font-awesome-icon class="fa" :icon="['fas', 'search']" />Demo
+						</a>
+						<a :href="work.source" class="button is-link" v-if="work.source">
+							<font-awesome-icon class="fa" :icon="['fab', 'github']" />GitHub
 						</a>
 					</div>
 				</div>
@@ -70,8 +54,8 @@ Vue.use(LazyLoad, {
 	// optional
 	observerOptions: {
 		rootMargin: "0px",
-		threshold: 0.1
-	}
+		threshold: 0.1,
+	},
 });
 
 library.add(faGithub, faSearch, faImage);
@@ -80,21 +64,21 @@ export default {
 	name: "WorkObject",
 	props: ["work"],
 	components: {
-		FontAwesomeIcon
+		FontAwesomeIcon,
 	},
 	data() {
 		return {
 			isActive: false,
 			images: this.work.preview,
-			index: null
+			index: null,
 		};
-	}
+	},
 };
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 
 @media (max-width: 768px) {
 	.btn-column {
@@ -132,8 +116,8 @@ img[lazy="loaded"] {
 
 .buttons {
 	display: flex;
-	justify-content: center;
-	margin-top: 5px;
+	justify-content: left;
+	margin-top: 10px;
 	margin-bottom: 5px;
 }
 
@@ -151,16 +135,15 @@ img[lazy="loaded"] {
 .work-description {
 	flex-grow: 1;
 	font-size: 16px;
-    margin: 4px 0;
-    font-family: 'Source Sans Pro', sans-serif;
+	margin: 4px 0;
+	font-family: "Source Sans Pro", sans-serif;
 	color: #222;
-
 }
 
 .message-header {
 	font-size: 14px;
 	color: #aaa;
-	font-family: 'Roboto Mono', monospace;
+	font-family: "Roboto Mono", monospace;
 	text-transform: uppercase;
 }
 
@@ -169,8 +152,8 @@ img[lazy="loaded"] {
 }
 
 .message {
-	box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
-	border: 1px solid #E6ECF8;
+	box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
+	border: 1px solid #e6ecf8;
 	border-radius: 5px;
 }
 
@@ -187,7 +170,7 @@ img[lazy="loaded"] {
 	margin: 0 3px;
 	display: inline-block;
 	white-space: nowrap;
-	font-family: 'Roboto Mono', monospace;
+	font-family: "Roboto Mono", monospace;
 	font-size: 12px;
 	text-transform: uppercase;
 	line-height: 1.5em;
@@ -195,24 +178,24 @@ img[lazy="loaded"] {
 
 @media (max-width: 768px) {
 	.button {
-		width: 70%;
-		margin-left: 0 !important;
-		margin-right: 0 !important;
+		flex: 1 1 0;
+		margin-left: 5px;
+		margin-right: 5px;
 	}
+
 	.buttons {
-		margin-top: 0;
 		margin-bottom: 10px;
+		justify-content: center;
 	}
+
 	.tool-badges {
 		line-height: 2em;
 		margin-top: 15px;
 	}
 
 	.tool-badge {
-
 		font-size: 13px;
 		/* line-height: 2em; */
 	}
 }
-
 </style>
