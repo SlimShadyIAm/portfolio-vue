@@ -1,16 +1,7 @@
 <template>
 	<div>
-		<WorkObject
-			v-for="work in workData"
-			:key="work.id"
-			:work="work"
-			v-on:images="setIndex"
-		/>
-		<VueGallery
-			:images="images.slice(1, images.length)"
-			:index="index"
-			@close="index = null"
-		></VueGallery>
+		<WorkObject v-for="work in workData" :key="work.id" :work="work" v-on:images="setIndex" />
+		<VueGallery :images="images.slice(1, images.length)" :index="index" @close="index = null"></VueGallery>
 	</div>
 </template>
 
@@ -23,7 +14,7 @@ export default {
 	name: "WorkObjects",
 	components: {
 		WorkObject,
-		VueGallery
+		VueGallery,
 	},
 	data() {
 		return {
@@ -38,7 +29,7 @@ export default {
 						"Figma",
 						"MaterializeCSS",
 						"Jersey",
-						"Java servlets"
+						"Java servlets",
 					],
 					description: `This project was tasked to us as a final project for the Data & Information course. This site is a dashboard to display data collected from running sensors they developed by a local company. We created the frontend in React, and API and backend in Jeresy and Java servlets.</i>`,
 					demo: "",
@@ -50,7 +41,7 @@ export default {
 							false,
 							/\.(png|jpe?g|svg)$/
 						)
-					)
+					),
 				},
 				{
 					id: uuid.v4(),
@@ -65,7 +56,7 @@ export default {
 							false,
 							/\.(png|jpe?g|svg)$/
 						)
-					)
+					),
 				},
 				{
 					id: uuid.v4(),
@@ -79,7 +70,7 @@ export default {
 							false,
 							/\.(png|jpe?g|svg)$/
 						)
-					)
+					),
 				},
 				{
 					id: uuid.v4(),
@@ -94,14 +85,15 @@ export default {
 							false,
 							/\.(png|jpe?g|svg)$/
 						)
-					)
+					),
 				},
 				{
 					id: uuid.v4(),
 					name: "Releasy McReleaseface",
 					tools: ["Python", "discord.py", "sqlite3", "RSS feeds"],
 					description: `A Discord bot which watches Apple's release feed for new updates to iOS, iPadOS, macOS, watchOS and tvOS.\n\nServer managers have the ability to subscribe to updates from a device and choose a channel for updates to be posted to. Additionally, you can set a role to ping for each OS type, when an update is posted.`,
-					demo: "https://slim.rocks/releasy",
+					demo:
+						"https://twitter.com/slimshadydev/status/1291014460400861184",
 					source:
 						"https://github.com/SlimShadyIAm/ReleasyMcReleaseface",
 					preview: this.importAll(
@@ -110,7 +102,7 @@ export default {
 							false,
 							/\.(png|jpe?g|svg)$/
 						)
-					)
+					),
 				},
 				{
 					id: uuid.v4(),
@@ -126,7 +118,7 @@ export default {
 							false,
 							/\.(png|jpe?g|svg)$/
 						)
-					)
+					),
 				},
 				{
 					id: uuid.v4(),
@@ -135,7 +127,7 @@ export default {
 						"Electron",
 						"HTML canvas",
 						"Javascript for game",
-						"raspberry pi system I/O"
+						"raspberry pi system I/O",
 					],
 					description: `This was a game written as a final group project for my Computer Systems course. We used Electron to make the game and an FPGA+accelerometer to add motion controls.<br>Aussie jump is a sidescroller game inspired by Flappy Bird and Google's T-Rex game on Chrome, featuring an Australian theme. Jump to avoid the obstacles. Click the link to watch our demo video!`,
 					demo: "https://youtu.be/Kcm_Yac7x3U",
@@ -146,7 +138,7 @@ export default {
 							false,
 							/\.(png|jpe?g|svg)$/
 						)
-					)
+					),
 				},
 				{
 					id: uuid.v4(),
@@ -161,7 +153,7 @@ export default {
 							false,
 							/\.(png|jpe?g|svg)$/
 						)
-					)
+					),
 				},
 				{
 					id: uuid.v4(),
@@ -176,7 +168,7 @@ export default {
 							false,
 							/\.(png|jpe?g|svg)$/
 						)
-					)
+					),
 				},
 				{
 					id: uuid.v4(),
@@ -191,8 +183,8 @@ export default {
 							false,
 							/\.(png|jpe?g|svg)$/
 						)
-					)
-				}
+					),
+				},
 				// {
 				// 	id: uuid.v4(),
 				// 	name: "",
@@ -208,17 +200,17 @@ export default {
 				// 		)
 				// 	)
 				// },
-			]
+			],
 		};
 	},
 	methods: {
-		importAll: function(r) {
+		importAll: function (r) {
 			return r.keys().map(r);
 		},
 		setIndex(index, imgs) {
 			this.index = index;
 			this.images = imgs;
-		}
-	}
+		},
+	},
 };
 </script>

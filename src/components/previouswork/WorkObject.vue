@@ -23,7 +23,7 @@
 						<a class="button is-link" v-on:click="$emit('images', 0, images)" v-if="images.length > 1">
 							<font-awesome-icon class="fa" :icon="['fas', 'image']" />Gallery
 						</a>
-						<a :href="work.demo" class="button is-link" v-if="!work.demo">
+						<a :href="work.demo" class="button is-link" v-if="work.demo">
 							<font-awesome-icon class="fa" :icon="['fas', 'search']" />Demo
 						</a>
 						<a :href="work.source" class="button is-link" v-if="work.source">
@@ -90,6 +90,7 @@ export default {
 	max-height: 0;
 	margin: 0 auto;
 	overflow: hidden;
+	border-radius: 3px;
 }
 
 img[lazy="loading"] {

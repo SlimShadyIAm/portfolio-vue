@@ -1,23 +1,24 @@
 <template>
 	<div id="about">
-		<HeroIntro
-			kind="is-info" style="padding-bottom: 190px;"
-		/>
-		<section class="section">
+		<section class="section xd">
 			<AboutColumns />
 		</section>
 	</div>
 </template>
 
 <script>
-import HeroIntro from "@/components/layout/HeroIntro";
 import AboutColumns from "@/components/home/AboutColumns";
 
 export default {
 	name: "about",
 	components: {
-		HeroIntro,
-		AboutColumns
-	}
+		AboutColumns,
+	},
 };
 </script>
+
+<style scoped>
+.xd {
+	background-color: #209cee;
+}
+</style>
