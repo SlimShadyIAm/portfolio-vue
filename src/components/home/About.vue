@@ -19,6 +19,6 @@ export default {
 
 <style scoped>
 .xd {
-	background-color: #209cee;
+	background-color: #3273dc;
 }
 </style>

@@ -50,7 +50,7 @@ export default {
 
 .column-icon {
 	margin-bottom: 30px;
-	color: #209cee;
+	color: #3273dc;
 }
 .column-title {
 	font-size: 18px;

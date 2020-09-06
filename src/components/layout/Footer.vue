@@ -18,14 +18,13 @@ export default {
 
 <style scoped>
 .footer {
-	padding: 10px;
-	background-color: hsla(204, 76%, 41%, 1);
+	padding: 40px;
+	background-color: #2960b9;
 	color: #fff;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-size: 18px;
 }
 .footer a {
-	color: rgb(1, 51, 92);
+	color: #264880;
 }
 </style>
