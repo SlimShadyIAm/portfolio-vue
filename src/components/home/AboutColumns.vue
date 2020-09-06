@@ -30,7 +30,7 @@ export default {
 							"20 years old",
 							"Pakistani born",
 							"Student at the University of Twente",
-							"2nd year Computer Science BSc",
+							"3rd year Computer Science BSc",
 							"On track to graduate fall of 2021",
 						],
 					},
