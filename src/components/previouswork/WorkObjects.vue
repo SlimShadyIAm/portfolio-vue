@@ -23,25 +23,18 @@ export default {
 			workData: [
 				{
 					id: uuid.v4(),
-					name: "Runner Assist Dashboard",
-					tools: [
-						"React",
-						"Figma",
-						"MaterializeCSS",
-						"Jersey",
-						"Java servlets",
-					],
-					description: `This project was tasked to us as a final project for the Data & Information course. This site is a dashboard to display data collected from running sensors they developed by a local company. We created the frontend in React, and API and backend in Jeresy and Java servlets.</i>`,
-					demo: "",
-					source:
-						"https://github.com/SlimShadyIAm/runner-assist-frontend/",
+					name: "GIR (Botty McBotface)",
+					tools: ["Python", "discord.py", "MongoDB"],
+					type: "Discord bot",
+					description: `A Discord bot for the r/Jailbreak Discord community, a server with over 35,000 members. This bot handles moderation commands, as well as message filtering, an XP system and various other utilities for users and moderators.`,
+					source: "https://github.com/SlimShadyIAm/BottyMcBotface",
 					preview: this.importAll(
 						require.context(
-							"@/assets/img/works/trimm",
+							"@/assets/img/works/gir",
 							false,
 							/\.(png|jpe?g|svg)$/
 						)
-					),
+					)
 				},
 				{
 					id: uuid.v4(),
@@ -57,7 +50,7 @@ export default {
 							/\.(png|jpe?g|svg)$/
 						)
 					),
-				},
+				},				
 				{
 					id: uuid.v4(),
 					name: "ApexTweaks",
@@ -106,6 +99,28 @@ export default {
 				},
 				{
 					id: uuid.v4(),
+					name: "Runner Assist Dashboard",
+					tools: [
+						"React",
+						"Figma",
+						"MaterializeCSS",
+						"Jersey",
+						"Java servlets",
+					],
+					description: `This project was tasked to us as a final project for the Data & Information course. This site is a dashboard to display data collected from running sensors they developed by a local company. We created the frontend in React, and API and backend in Jeresy and Java servlets.</i>`,
+					demo: "",
+					source:
+						"https://github.com/SlimShadyIAm/runner-assist-frontend/",
+					preview: this.importAll(
+						require.context(
+							"@/assets/img/works/trimm",
+							false,
+							/\.(png|jpe?g|svg)$/
+						)
+					),
+				},
+								{
+					id: uuid.v4(),
 					name: "TalkBoard",
 					tools: ["VueJS", "Gridsome", "Bulma", "Github actions"],
 					description: `A website I created for the host of the TalkBoard podcast, Aaron, a prominent member of the iOS jailbreak community. The podcast invites the most talented developers, from the jailbreaking scene and the general tech industry, for a candid conversation about their passion for their work.`,
@@ -140,21 +155,21 @@ export default {
 						)
 					),
 				},
-				{
-					id: uuid.v4(),
-					name: "Material Admin",
-					tools: ["Static HTML", "MaterializeCSS"],
-					description: `An adminisrative panel template based on the <a href="http://materializecss.com">materializecss.com</a> CSS framework. This template is currently in use as the moderator control panel at <a href="https://opdessertstorm.com">opdessertstorm.com</a>, a game with over <strong>32,000 accounts</strong>. This template was also used in my Runner Assist project, and it was adapted for <a href="https://zira.ovh">Zira's</a> dashboard <a href="https://projects.aamirfarooq.dev/zira/">(demo here</a>, screenshots in gallery).`,
-					demo: "https://projects.aamirfarooq.dev/material-admin/",
-					source: "https://github.com/SlimShadyIAm/material-admin/",
-					preview: this.importAll(
-						require.context(
-							"@/assets/img/works/material-admin",
-							false,
-							/\.(png|jpe?g|svg)$/
-						)
-					),
-				},
+				// {
+				// 	id: uuid.v4(),
+				// 	name: "Material Admin",
+				// 	tools: ["Static HTML", "MaterializeCSS"],
+				// 	description: `An adminisrative panel template based on the <a href="http://materializecss.com">materializecss.com</a> CSS framework. This template is currently in use as the moderator control panel at <a href="https://opdessertstorm.com">opdessertstorm.com</a>, a game with over <strong>32,000 accounts</strong>. This template was also used in my Runner Assist project, and it was adapted for <a href="https://zira.ovh">Zira's</a> dashboard <a href="https://projects.aamirfarooq.dev/zira/">(demo here</a>, screenshots in gallery).`,
+				// 	demo: "https://projects.aamirfarooq.dev/material-admin/",
+				// 	source: "https://github.com/SlimShadyIAm/material-admin/",
+				// 	preview: this.importAll(
+				// 		require.context(
+				// 			"@/assets/img/works/material-admin",
+				// 			false,
+				// 			/\.(png|jpe?g|svg)$/
+				// 		)
+				// 	),
+				// },
 				{
 					id: uuid.v4(),
 					name: "Froebel's Model UN 2016",

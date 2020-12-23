@@ -27,7 +27,7 @@ export default {
 					{
 						title: "About me",
 						features: [
-							"20 years old",
+							"21 years old",
 							"Pakistani born",
 							"Student at the University of Twente",
 							"3rd year Computer Science BSc",
@@ -58,6 +58,8 @@ export default {
 					{
 						title: "My Tools",
 						features: [
+							"Python",
+							"MongoDB",
 							"HTML5 and CSS3",
 							"JavaScript",
 							"NodeJS",
@@ -68,7 +70,6 @@ export default {
 							"Gatsby",
 							"Jekyll",
 							"Java",
-							"Python",
 							"Linux and server administration",
 						],
 					},
