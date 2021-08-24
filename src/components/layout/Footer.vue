@@ -25,6 +25,6 @@ export default {
 	font-size: 18px;
 }
 .footer a {
-	color: #264880;
+	color: #71a8ff;
 }
 </style>
