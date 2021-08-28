@@ -40,7 +40,7 @@ export default {
 	border-bottom: 1px solid #e6ecf8;
 	border-right: 1px solid #e6ecf8;
 	text-align: center;
-	box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
+	/* box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8; */
 	height: 100%;
 }
 

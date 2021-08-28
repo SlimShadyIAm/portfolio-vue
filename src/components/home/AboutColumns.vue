@@ -60,6 +60,7 @@ export default {
 						features: [
 							"Python",
 							"MongoDB",
+							"Flutter",
 							"HTML5 and CSS3",
 							"JavaScript",
 							"NodeJS",
@@ -82,12 +83,12 @@ export default {
 
 <style scoped>
 .yee {
-	-webkit-box-shadow: 10px 10px 5px 0px rgba(17, 17, 17, 0.57);
-	-moz-box-shadow: 10px 10px 5px 0px rgba(17, 17, 17, 0.57);
-	box-shadow: 10px 10px 5px 0px rgba(17, 17, 17, 0.57);
+	/* -webkit-box-shadow: 10px 10px 5px 0px rgba(17, 17, 17, 0.57); */
+	/* -moz-box-shadow: 10px 10px 5px 0px rgba(17, 17, 17, 0.57); */
+	/* box-shadow: 10px 10px 5px 0px rgba(17, 17, 17, 0.57); */
 }
 .yee:first-child .column:first-child .about-column {
-	border-left: 1px solid #e6ecf8;
+	/* border-left: 1px solid #e6ecf8; */
 	border-radius: 10px 0 0 10px;
 }
 

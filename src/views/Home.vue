@@ -1,6 +1,7 @@
 <template>
 	<div class="home">
 		<HeroHome />
+		<div class="spacer"></div>
 		<About />
 		<Footer />
 	</div>
@@ -20,3 +21,21 @@ export default {
 	}
 };
 </script>
+
+<style scoped>
+
+.spacer {
+	aspect-ratio: 700/100;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-image: url('../assets/img/waves.svg');
+}
+
+@media (max-width: 768px) {
+	.spacer {
+		aspect-ratio: 500/200;
+	}
+}
+</style>

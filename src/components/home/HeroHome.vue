@@ -90,9 +90,10 @@ export default {
 }
 
 .home-hero {
-	animation: bg-colorfade 30s infinite;
+	/* animation: bg-colorfade 30s infinite;
 	-moz-animation: bg-colorfade 30s infinite;
-	-webkit-animation: bg-colorfade 30s infinite;
+	-webkit-animation: bg-colorfade 30s infinite; */
+	background-color: #7d68dd;
 }
 
 @keyframes bg-colorfade {
@@ -136,7 +137,7 @@ export default {
 
 .intro-inner-left,
 .intro-inner-right {
-	margin: 60px;
+	margin: 40px 60px 20px 60px;
 }
 
 p.intro-text {
