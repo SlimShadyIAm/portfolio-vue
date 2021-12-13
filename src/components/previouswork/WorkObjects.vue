@@ -23,10 +23,40 @@ export default {
 			workData: [
 				{
 					id: uuid.v4(),
-					name: "GIR (Botty McBotface)",
-					tools: ["Python", "discord.py", "MongoDB"],
+					name: "ETT Dashboard",
+					tools: ["React", "TypeScript", "MaterialUI", "SWR"],
+					type: "Web App",
+					description: `This was my Bachelor graduation design project. It was a dashboard created for <a href="https://esportsteamtwente.nl/" target=_blank>Esports Team Twente</a>, who wanted a centralized dashboard where you could upload replay files from game, run them through a data analysis pipeline, and store and display statistics from matches. We created the frontend, backend, API and database implementation to solve their use case.`,
+					source: "",
+					preview: this.importAll(
+						require.context(
+							"@/assets/img/works/ett-dashboard",
+							false,
+							/\.(png|jpe?g|svg)$/
+						)
+					)
+				},
+				{
+					id: uuid.v4(),
+					name: "There Is More Than One Way To Zen Your Python",
+					tools: [],
+					type: "Research paper",
+					description: `This was my Bachelor thesis project, which was then partially rewritten and submitted to SPLASH conference on Software Language Engineering, and subsequently published. This paper explores the concept of "pythonicity" and the so-called "pythonic-idioms" -- in other words, what makes good Python code good. We conducted a literature review, detected uses of the idioms in open source code, and commented on idiom usage trends over time. One of the products of this research is my Pythonic idiom catalog, which can be found <a href="https://slimshadyiam.github.io/ZenYourPython/" target="_blank">here</a>, and the full paper can be found <a href="https://dl.acm.org/doi/10.1145/3486608.3486909" target="_blank">here</a>.`,
+					source: "",
+					preview: this.importAll(
+						require.context(
+							"@/assets/img/works/zen-your-python",
+							false,
+							/\.(png|jpe?g|svg)$/
+						)
+					)
+				},
+				{
+					id: uuid.v4(),
+					name: "Bloo (GIR)",
+					tools: ["Python", "pycord", "MongoDB"],
 					type: "Discord bot",
-					description: `A Discord bot for the r/Jailbreak Discord community, a server with over 35,000 members. This bot handles moderation commands, as well as message filtering, an XP system and various other utilities for users and moderators.`,
+					description: `A Discord bot for the r/Jailbreak Discord community, a server with over 60,000 members. This bot handles moderation commands, as well as message filtering, an XP system and various other utilities for users and moderators.`,
 					source: "https://github.com/SlimShadyIAm/BottyMcBotface",
 					preview: this.importAll(
 						require.context(
